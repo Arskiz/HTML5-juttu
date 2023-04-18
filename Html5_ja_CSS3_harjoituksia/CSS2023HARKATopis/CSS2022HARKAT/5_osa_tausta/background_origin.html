@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title>Esimerkki background-origin</title>
+<style>
+	.box {
+		width: 250px;
+		height: 150px;
+        padding: 10px;
+        border: 6px dashed #333;
+		background: url("/CSS2023HARKATopis/CSS2022HARKAT/images/järvi2m.jpg") no-repeat;
+		background-size: contain;
+		/* CSS-ominaisuus määrittää taustan sijaintialueen, eli ominaisuudella background-origin määritetyn kuvan alkuperän sijainnin. */
+        background-origin: content-box;
+	} 
+</style>
+</head>
+<body>
+    <div class="box"></div>
+  	<p>Kuva ja sen kehys</p>
+</body>
+</html>
+

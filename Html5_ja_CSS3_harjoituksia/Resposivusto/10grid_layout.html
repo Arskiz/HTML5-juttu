@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif ;
+}
+
+p {
+  margin-block-start: var(--metric-box-spacing);
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+header {
+  padding: var(--metric-box-spacing);
+  background-color: hsl(140deg 70% 95%);
+  font-size: 1.4em;
+}
+
+main {
+  min-block-size: calc(100vh - 6em);
+}
+
+article {
+  background-color: hsl(60deg 70% 95%);
+}
+
+aside {
+  background-color: hsl(0deg 70% 95%);
+}
+
+article,
+aside {
+  padding: var(--metric-box-spacing);
+  margin: var(--metric-box-spacing);
+}
+
+footer {
+  padding: calc(var(--metric-box-spacing) / 2);
+  background-color: hsl(200deg 70% 95%);
+}
+/* macro layouts */
+@media (min-width: 45em) {
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <body>
+        <header>
+          My Website
+        </header>
+        <main>
+          <article>
+            <h1>Oma verkkosivu</h1>
+            <p>Tämä on verkkosivuni. Sen kaltaisia ​​on monia, mutta tämä on minun.</p>
+            <p>Käytän hypertekstin merkintäkieltä (<dfn>HTML</dfn>) rakenteen luomiseen tälle sivulle.</p>
+            <p>Tämä teksti on esimerkiksi sellaisen kappaleen sisällä, joka on artikkelin sisällä, joka on pääsisällön sisällä.</p>
+            <p>Seuraavassa tangentiaalisessa tiedossa käytän <code>aside</code>-elementtiä.</p>
+          </article>
+          <aside>
+            <h2>Historia</h2>
+            <p>Tiesitkö, että <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">ensimmäinen koskaan tehty verkkosivu</a> on edelleen verkossa alkuperäisellä URL-osoitteellaan?</p>
+            <p>Sivun loi Tim Berners-Lee 90-luvun alussa, ja se toimii edelleen nykyaikaisella verkkoselaimella.</p>
+          </aside>
+
+        </main>
+        <footer>
+          <small>I made this!</small>
+        </footer>
+      </body>
+</body>
+</html>

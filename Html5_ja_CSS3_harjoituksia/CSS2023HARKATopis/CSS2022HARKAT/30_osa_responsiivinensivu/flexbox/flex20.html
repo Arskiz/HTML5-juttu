@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Flex</title>
+<style>
+.flex-container {
+    width: 80%;
+    min-height: 300px;
+    margin: 0 auto;
+	font-size: 32px;
+    
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #666;
+}
+.flex-container div {
+	padding: 10px;
+	flex: 1;
+}
+.item1 {
+	background: #e84d51;
+}
+.item2 {
+	background: #7ed636;
+}
+.item3 {
+	background: #2f97ff;
+}
+</style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item1">Asia 1</div>
+        <div class="item2">Asia 2</div>
+        <div class="item3">Asia 3</div>
+    </div>
+    <p><strong>Note:</strong> Muuta flex-direction-ominaisuuden arvo "column" arvoon "column-reverse" ymmärtääksesi, miten tämä ominaisuus toimii.</p>
+</body>
+</html>

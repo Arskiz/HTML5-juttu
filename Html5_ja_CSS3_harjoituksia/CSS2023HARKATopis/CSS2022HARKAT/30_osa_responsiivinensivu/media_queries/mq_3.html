@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title>Media Queries</title>
+<style>
+    /* älypuhelimet (pysty- ja vaakasuunta) ---------- */
+    @media screen and (min-width: 320px) and (max-width: 480px){
+        body{
+			background: #7ce7e1;
+		}
+    }
+    /* älypuhelimet (pystysuunta) ---------- */
+    @media screen and (max-width: 320px){
+        body{
+			background: #ffd280;
+		}
+    }
+    /* älypuhelimet(vaakasuunta) ---------- */
+    @media screen and (min-width: 321px){
+        body{
+			background: #9ddfbb;
+		}
+    }
+    /* tabletit, iPadit (pysty- ja vaakasuunta) ---------- */
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        body{
+			background: #ffb497;
+		}
+    }
+    /* tabletit, iPadit (pystysuunta) ---------- */
+    @media screen and (min-width: 768px){
+        body{
+			background: #f0e68c;
+		}
+    }
+    /* tabletit, iPadit (vaakasuunta) ---------- */
+    @media screen and (min-width: 1024px){
+        body{
+			background: #d6b3f4;
+		}
+    }
+    /* työpöytäkoneet ja läppärit ---------- */
+    @media screen and (min-width: 1224px){
+        body{
+			background: #d8ff9d;
+		}
+    }
+    /* Isot näytöt  ---------- */
+    @media screen and (min-width: 1824px){
+        body{
+			background: #ffc0cb;
+		}
+    }
+</style>
+</head>
+<body>
+    <h1>CSS Media Queries</h1>
+   <p>Tulostusalueen tausta on erilainen eri medioissa tai laitteissa.</p>
+    <p><strong>Vaihtoehto:</strong> Voit myös nähdä tämän mediakyselyn vaikutuksen avaamalla sen uudessa ikkunassa ja muuttamalla sen leveyttä eri kokoiseksi. Taustaväri vaihtuu.</p>
+</body>
+</html>

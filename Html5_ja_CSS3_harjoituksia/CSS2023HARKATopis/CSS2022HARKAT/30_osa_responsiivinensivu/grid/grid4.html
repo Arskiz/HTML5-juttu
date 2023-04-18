@@ -1,0 +1,42 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <title>testi</title>
+<style>
+#grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1px;
+}
+#grid > div {
+  background-color: limegreen;
+  color: white;
+  font-size: 4vw;
+  padding: 10px;
+}
+#grid > div:first-child {
+  grid-area: 2 / 1;
+  background: orangered;
+  animation: myAnimation 1s ease 1s 5 alternate forwards;
+  }
+@keyframes myAnimation {
+  100% {
+  grid-area: 2 / 2 / 4 / 4;
+  }
+</style>
+</head>
+<body>
+
+<div id="grid">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+</div>
+</body>
+</html>

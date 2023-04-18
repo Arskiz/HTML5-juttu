@@ -1,0 +1,22 @@
+<!DOCTYPE html> 
+<html>
+<head>
+   <title> Try It Yourself </title>
+   <!-- tässä ei ole meta name="viewportia -->
+   <style>
+      body {
+         counter-reset: headings;
+      }
+      h3::before {
+         counter-increment: headings;
+         content: "Section " counter(headings) ": ";
+      }
+   </style>
+</head>
+<body>
+   <h3> Introduction </h3>
+   <h3> Methodology </h3>
+   <h3> Results and Discussions </h3>
+   <h3> Conclusions </h3>
+</body>
+</html>

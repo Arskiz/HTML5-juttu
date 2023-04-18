@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+        padding: var(--metric-box-spacing);
+        }
+        a:focus,
+        a:hover {
+        outline: 1px dotted;
+        }
+        a:focus-visible {
+        outline: 3px solid;
+        }
+        ol {
+        display: grid;
+        grid-gap: var(--metric-box-spacing);
+        }
+        ol li {
+        list-style: none;
+        padding: var(--metric-box-spacing);
+        background-color: var(--color-off-white);
+        border-radius: var(--metric-radius);
+        box-shadow: var(--generic-shadow);
+        }
+    </style>
+</head>
+<body>
+    <h1>Focus styles</h1>
+<p>See the difference when you mouse over a link compared to tabbing with the keyboard.</p>
+
+<ol>
+  <li><a href="#">This is the first link in the document</a></li>
+  <li><a href="#">This is the second link in the document</a></li>
+  <li><a href="#">This is the third link in the document</a></li>
+</ol>
+</body>
+</html>

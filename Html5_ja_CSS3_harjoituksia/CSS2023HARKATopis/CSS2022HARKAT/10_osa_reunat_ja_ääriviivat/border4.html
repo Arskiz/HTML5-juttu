@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Pyöristettyjen kulmien luominen elementin ympärille</title>
+    <style>
+		div {
+			padding: 15px;
+			margin-bottom: 20px;
+			background: #ffb6c1;
+			border: 2px solid #f08080;
+		}
+		div.one {
+			border-radius: 20px;
+		}
+		div.two {
+			border-radius: 10px 30px;
+		}
+		div.three {
+			border-radius: 10px 30px 20px;
+		}
+		div.four {
+			border-radius: 10px 20px 30px 40px;
+		} 
+    </style>
+</head>
+<body>
+    <div class="one"><strong>one-value syntax:</strong> yksittäinen arvo määrittää kaikkien kulmien säteen.</div>
+    <div class="two"><strong>two-value syntax:</strong> ensimmäinen arvo määrittää vasemman yläkulman ja oikean alakulman säteen, kun taas toinen arvo määrittää oikean yläkulman ja vasemman alakulman säteen.</div>
+    <div class="three"><strong>three-value syntax:</strong>ensimmäinen arvo määrittää vasemman yläkulman säteen, toinen arvo määrittää oikean yläkulman ja vasemman alakulman säteen ja kolmas arvo määrittää oikean alakulman säteen.</div>
+    <div class="four"><strong>four-value syntax:</strong> jokainen arvo määrittelee reunuksen säteen erikseen järjestyksessä vasen yläkulma, oikea yläkulma, oikea alakulma ja vasen alakulma.</div>
+    
+</body>
+</html> 

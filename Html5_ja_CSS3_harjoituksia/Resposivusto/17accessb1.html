@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media (prefers-contrast: no-preference) {
+        html {
+            background-color: #eee;
+            color: #333;
+        }
+        }
+
+        @media (prefers-contrast: more) {
+        html {
+            background-color: white;
+            color: #000;
+        }
+        }
+
+        @media (prefers-contrast: less) {
+        html {
+            background: conic-gradient(from 90deg at 50% -10%, #bbb, 50%, #999, #bbb);
+            color: #555;
+        }
+        }
+
+        @media (prefers-contrast: no-preference) and (prefers-color-scheme: dark) {
+        html {
+            background-color: #111;
+            color: #aaa;
+        }
+        }
+
+        @media (prefers-contrast: more) and (prefers-color-scheme: dark) {
+        html {
+            background-color: black;
+            color: white;
+        }
+        }
+
+        @media (prefers-contrast: less) and (prefers-color-scheme: dark) {
+        html {
+            background: conic-gradient(from 90deg at 50% -10%, #222, 50%, #444, #222);
+            color: #ddd;
+        }
+        }
+
+        h1 {
+        max-inline-size: 25ch;
+        }
+
+        * {
+        box-sizing: border-box;
+        margin: 0;
+        }
+
+        html {
+        block-size: 100%;
+        }
+
+        body {
+        min-block-size: 100%;
+        font-family: system-ui, sans-serif;
+        
+        display: grid;
+        place-content: center;
+        gap: 1ch;
+        
+        padding-inline: 5vmin;
+        }
+    </style>
+</head>
+<body>
+    <p>Kokea demo:</p>
+<h1>Muuta kontrasti- ja väriasetuksia järjestelmäasetuksissa TAI emuloi niitä DevTools > Rendering -toiminnolla</h1>
+</body>
+</html>

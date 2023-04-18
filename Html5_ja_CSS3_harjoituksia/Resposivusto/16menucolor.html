@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+button {
+  color: blue;
+  background-color: var(--color-off-white);
+  border-color: var(--color-mid);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding: 0.5em;
+  border-radius: 0.25em;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+}
+button rect {
+  fill: blue;
+}
+button:hover,
+button:focus {
+  background-color: var(--color-light);
+  color: red;
+}
+button:hover rect,
+button:focus rect {
+  fill: red;
+}
+    </style>
+</head>
+<body>
+    <!-- katso lisää menusta ja iconeista https://web.dev/learn/design/icons/ -->
+    <button class="menu">
+        <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 80" width="16" height="16">
+          <rect width="100" height="20" />
+          <rect y="30" width="100" height="20"/>
+          <rect y="60" width="100" height="20"/>
+        </svg>
+        Menu
+      </button>
+</body>
+</html>

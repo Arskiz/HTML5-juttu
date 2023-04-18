@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<title>3D Transform</title>
+<style>
+.container{
+    margin: 50px;
+	width: 125px;
+    height: 125px;
+  	perspective: 300px;
+  	border: 4px solid #d14e46;
+    background: #fddddb;
+}
+.transformed {
+    -webkit-transform: translate3d(0, 0, 60px) rotate3d(0, 1, 0, -60deg) scale3d(1, 1, 2); /* Chrome, Safari, Opera */
+    transform: translate3d(0, 0, 60px) rotate3d(0, 1, 0, -60deg) scale3d(1, 1, 2); /* Standard syntax */
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+</style>
+</head>
+<body>
+    <h2>Ennen:</h2>
+    <div class="container">
+      	<img src="/images/gradient.png" alt="gradient">
+    </div>
+    <h2>Jälkeen:</h2>
+  	<div class="container">
+        <img src="/images/gradient.png" class="transformed" alt="gradient2">
+    </div>
+</body>
+</html>

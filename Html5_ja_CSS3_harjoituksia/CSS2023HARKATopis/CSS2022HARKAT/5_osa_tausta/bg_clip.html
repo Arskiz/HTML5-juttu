@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Taustan reunukset</title>
+<style>
+	.box {
+		width: 250px;
+		height: 150px;
+		padding: 10px;
+		border: 6px dashed #333;
+		background: orange;
+	}
+	.clip1 {
+		background-clip: border-box;
+	}
+	.clip2 {
+		background-clip: padding-box;
+	}
+	.clip3 {
+		background-clip: content-box;
+	}
+</style>
+</head>
+<body>
+    <h2>Oletus Background </h2>
+    <div class="box"></div>
+    <h2>Taustan leikkaaminen käyttäen border-box</h2>
+    <div class="box clip1"></div>
+    <h2>Taustan leikkaaminen käyttäen padding-box</h2>
+    <div class="box clip2"></div>
+    <h2>Taustan leikkaaminen käyttäen content-box</h2>
+    <div class="box clip3"></div>
+</body>
+</html>

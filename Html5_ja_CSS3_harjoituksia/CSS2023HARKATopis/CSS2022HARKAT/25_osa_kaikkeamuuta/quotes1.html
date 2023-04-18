@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <title>Määritä lainausmerkit</title>
+    <style>             
+        q {
+            quotes: '[' ']' '"' '"';
+        }
+        q:before {
+            content: open-quote;
+        }
+        q:after {
+            content: close-quote;
+        }   
+    </style>
+</head>
+<body>
+  <p><q>Tässä on esimerkki <q>upotetuista</q> lainausmerkeistä.</q></p>
+  <p>Tee uusi upotettu lainausmerkki. etsi netistä yksi aforismi ja lisää se tähän.</p>
+</body>
+</html>

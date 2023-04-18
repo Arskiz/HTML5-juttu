@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Liquid layout</title>
+    <style>
+        body {
+            width: 640px;
+            font-family: sans-serif;
+            line-height: 1.5;
+            padding: 0 16px;
+            min-width: 300px;
+            max-width: 800px;
+            }
+
+            h1 {
+            margin-bottom: 0;
+            }
+    </style>
+</head>
+<body>
+    <h1>Liquid layout</h1>
+<artikkeli>
+  <p>Kiinteän leveyden käyttämisen sijaan voit tehdä joustavan asettelun käyttämällä sarakkeiden leveyksien prosentteja. Tämä toimii useammissa tilanteissa kuin kiinteän leveyden asettelu, joka näyttää oikealta vain tietyssä koossa. Näitä kutsuttiin "joustaviksi" asetteluiksi.</p>
+  <p>Mutta vaikka joustava asettelu näyttää hyvältä useilla eri leveyksillä, se alkaa huonontua äärimmäisissä kohdissa. Laajanäytöllä asettelu näyttää siltä, ​​että sitä on venytetty liian pitkälle. Kapealla näytöllä asettelu näyttää siltä kuin se olisi puristettu. Molemmat skenaariot tuntuvat epämukavilta.</p>
+  <p>Voit lieventää näitä ongelmia käyttämällä asettelussasi <code>min-width</code> ja <code>max-width</code>. Mutta sitten kaikissa vähimmäisleveyden alapuolella tai enimmäisleveyden ylittävissä kooissa sinulla on samat ongelmat kuin kiinteän leveyden asettelun kanssa. Leveällä näytöllä käyttämätöntä tilaa menisi hukkaan. Kapealla näytöllä käyttäjän on siirrettävä koko sivua vasemmalle ja oikealle nähdäkseen kaiken.</p>
+</article>
+<syrjään>
+  <p>Sana "liquid" on vain yksi termeistä, joita käytetään kuvaamaan tällaista asettelua. Tällaisia ​​malleja kutsuttiin myös sujuviksi(fluid layouot) asetteluiksi tai joustaviksi(flexible layout) asetteluiksi. Terminologia oli yhtä sujuvaa kuin tekniikka.</p>
+  <p>Tässä esimerkissä käytetään CSS-ominaisuutta <code>float</code> sarakkeiden luomiseen. Se oli suosittu tekniikka ennen CSS-ruudukon tai flexboxin olemassaoloa.</p>
+</aside>
+</body>
+</html>

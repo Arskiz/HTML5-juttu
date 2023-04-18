@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html>
+<head>
+   <title> Try It Yourself </title>
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+      }
+      .row::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      .row > div {
+         float: left;
+         color: white;
+         height: 500px;
+         padding: 10px;
+      }
+      .side-nav {
+         width: 30%;
+         background: #903C56;
+      }
+      .content {
+         width: 70%;
+         background: #173459;
+      }
+      .side-nav > ul {
+         list-style-type: none;
+         padding: 0;
+         line-height: 175%;
+      }
+      .side-nav > ul > li > a {
+         text-decoration: none;
+         color: white;
+      }
+   </style>
+</head>
+<body>
+   <div class="row">
+      <div class="side-nav">
+         <h3> Side Nav </h3>
+         <ul>
+            <li><a href="#"> Home </a></li>
+            <li><a href="#"> About </a></li>
+            <li><a href="#"> Blogs </a></li>
+            <li><a href="#"> Gallery </a></li>
+            <li><a href="#"> Terms </a></li>
+            <li><a href="#"> Privacy </a></li>
+         </ul>
+      </div>
+      <div class="content">
+         <h3> Lorem Ipsum </h3>
+         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis interdum dignissim nisl posuere efficitur. Suspendisse sit amet lorem scelerisque, pellentesque mauris at, blandit arcu. Suspendisse lectus erat, hendrerit at neque a, posuere convallis lacus. Vivamus facilisis sed nisi nec lobortis. Ut purus sapien, tincidunt a leo sit amet, sagittis laoreet erat. Integer sed sapien ut enim placerat ultrices ut quis nibh. Morbi malesuada orci a purus interdum malesuada. Vivamus id rhoncus tellus. Phasellus sed velit enim. Praesent interdum euismod ullamcorper. </p>
+      </div>
+   </div>
+</body>
+</html>

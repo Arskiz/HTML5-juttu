@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Esimerkki table-layout ominaisuudesta</title>
+<style>             
+    table {
+        width: 250px;
+        border-collapse: separate;            
+    }
+    table, tr, th, td{
+        border: 1px solid #000000;
+    }
+    .auto {
+        table-layout: auto;
+    }
+    .fixed {
+        table-layout: fixed;
+    }
+    td{
+        width: 50%;
+    }
+</style>
+</head>
+<body>
+    <table class="auto">
+        <caption>Esim 1. Auto</caption>
+        <tr>
+            <th>Nimi</th>
+            <td>Joonas Joonaksela</td>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <td>joonas@mail.com</td>
+        </tr>
+    </table>
+    <br>
+    <table class="fixed">
+        <caption>Esim. 2. Fixed</caption>
+        <tr>
+            <th>Nimi</th>
+            <td>Peter Pan</td>
+        </tr>
+        <tr>
+            <th>Sposti</th>
+            <td>peterpan@mail.com</td>
+        </tr>
+    </table>
+	<p><strong>Hox:</strong> Näet, että taulukon solun leveys ei muutu kiinteän taulukkoasettelun sisällön mukaiseksi.</p>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+	Industrious by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	<head>
+		<title>Harkat3, upotettu sisältö</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a class="logo" href="index.html">Nettisivut</a>
+				<nav>
+					<a href="#menu">Menu</a>
+				</nav>
+			</header>
+
+		<!-- Nav -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Tietoa</a></li>
+					<li><a href="elements.html">Elementtejä</a></li>
+					<li><a href="matskut.html">Materiaalit</a></li>
+                    <li><a href="harkat.html">Harjoitukset1</a></li>	
+                    <li><a href="harkat2.html">Harjoitukset2</a></li>
+                    <li><a href="harkat3.html">Harjoitukset3</a></li>
+					<li><a href="harkat4.html">Harjoitukset4</a></li>
+					<li><a href="harkat4_5.html">Harjoitukset4_5</a></li>
+					<li><a href="harkat5.html">Harjoitukset5</a></li>		
+				</ul>
+			</nav>
+
+		<!-- Heading -->
+			<div id="heading" >
+				<h1>Tehtävät osa 3, upotettu sisältö</h1>
+			</div>
+
+		<!-- Main -->
+			<section id="main" class="wrapper">
+				<div class="inner">
+					<div class="content">
+						<header>
+							<h2>Upotus tehtäviä</h2>
+						</header>
+						
+							<h3>T33, liitä video linkillä</h3>
+                <p>Html dokumenttiin voidaan liittää video-, ääni- tai muu esitys tavallisella linkillä. </p> 
+                <p>Hae video netistä, ota video esim. puhelimellasi tai käytä koneellasi olevaa videota. Aihe on vapaa. Lataa video koneellesi samaan kansioon, missä html-sivuille tarkoitetut kuvat ovat (images kansio). Älä käytä esimerkissä olevaa videota.
+								<br><br><a href=images/ajo.mp4> Video </a></p>
+                
+								<hr>
+							
+                <h3>T34, Lisää video jossa soitin (control) mukana </h3>
+                <p><b>Src-määrite</b> ilmoittaa videotiedoston. 
+                </p>
+				<p>html: Video laitetaan section id="omavideo" sisään.</p>
+								
+								
+							Jotta videon koko on sopiva sivuille, CSS-koodiin lisätään koodi <pre><code>#omavideo {width: 400px;}</code></pre> 
+                <section id="omavideo">
+                <video src=images/ajo.mp4 controls></video>
+              	</section>
+							<hr/>
+						
+							<h3>T35, Tee painike, joka avaa yllä olevan videon</h3>
+							<p>Videon tuominen voidaan toteuttaa myös java-painikkeella kuten alla. Laita painikkeen tekstiksi Avaa video.</p>
+                <input type="button" value="Näytä video" onclick="document.getElementsByTagName('video') [0].play()">
+							<hr/>
+							
+							<h3>T36, Upota kuva</h3> 
+                            
+							<img src=images/hattu.jpg alt="(maisema ja hattu)" class="vasen">
+							<br>
+							<p>Hae netistä ilmainen kuva ja tallenna se images kansioon, älä käytä alla olevia kuvia. Lisää koodi.
+							Laita kuvatiedoston nimi ja alt-teksti. Tässä kuva on laitettu css-koodilla vasempaan reunaan (.vasen). Kirjoita kuvan viereen tekstiä.</p>
+							<p> Jos kuva ei avaudu, tai kuvan esitys on estetty, selain esittää sen tilalla alt-määritteen arvon tässä (maisema ja hattu). 
+							Kuvan leveys ja korkeus voidaan esittää prosentteina esim. width:50% <img...style="width:50%">
+							<p>Kuitenkin, jos kuva on sivuille liian suuri kokoinen, se kannattaa käydä pienentämässä kuvankäsittelyohjelmassa.
+							Koululla käytettäviä kuvankäsittelyohjelmia ovat: Paint, Photoshop ja D318 luokkaan voidaan asentaa Gimp. Etsi netistä, miten Gimpissä 
+							kuvan kokoa muutetaan pienemmäksi. Photoshopissa se tapahtuu: Kuva/Kuvan koko / muuta prosenttikokoa pienemmäksi.
+							</p>   
+							<br>
+
+							<hr/>
+
+							<h3>T37, lisää kuva ja kuvateksti sen alle</h3>
+							<p>Lisää netistä lataamasi kuva tai itse ottamasi kuva. Älä käytä esimerkissä näkyvää kuvaa. Pienennä kuvan kokoa kuvankäsittelyohjelmalla.</p>
+              <p> Voit käyttää määritettä alt="", kun haluat, ettei kuvassa ole kuvatekstiä ja käytät figcaption-elementtiä. </p>
+              <figure>
+                <img src=images/citrus.jpg alt="">
+                <figcaption>Sitruuna</figcaption>
+                </figure> 
+							<hr/>
+
+              <h3>T38, tee linkillinen painike, joka sisältää kuvan. </h3>
+              <p>Hae esim. Redun sivuilta redun logo ja tallenna se hiiren kakkospainikeella images kansioon. Tuo logo ja tee linkki logoon</p>
+				<p><a href=http://www.redu.fi><img src=images/logo.jpg alt="Lapin koulutuskeskus, Redu"></a></p>
+				<hr/>
+
+				<h3>T39, tee testausta varten sivuillesi ulkoisen sisällön upotus digitoday.fi sivulta iframella.</h3>
+				<aside>
+              <p>Tee upotus tähän.</p>
+              </aside>
+              <p> Upotus tulkitaan Suomessa tekijänoikeudellisesti merkitykselliseksi, ts. siihen tarvitaan alkuperäisen sivun oikeudenomistajien lupa. Usein ulkoisen sivuston sivulla sallitaan upotus ja annetaan ohjeita sitä varten. </p> 
+				<hr/>
+
+				
+							<h3>T40 Kuvakkeet </h3>
+							<p> Tee upotettu_sisalto.php niminen tiedosto. Hae netistä ostoskori kuva ja pienennä sitä kuvankäsittelyohjelmassa. 
+								Lisää koodi: a href = upotettu_sisalto.php ja img src=images.ostoskori.jpg. Alt tekstinä ostoskori.</p>
+                <a href="upotettu_sisalto.php"><img src=images/ostoskori.jpg alt="ostoskori"></a>
+
+							<hr>
+              <h3>T41, Lisää tekemäsi sivu iframe elementillä. Tässä lisätty index.html</h3>
+              <p>Lisää ainakin yksi tekemäsi sivu iframe elementillä. Lisää css-koodiin iframen korkeus ja leveys.</p>
+              <p><iframe src=index.html></iframe></p>
+							<hr>
+							<br>
+
+							<h3>T42, upota Googlen kartta iframella</h3>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1592.1400336538534!2d25.724744116008086!3d66.481149684704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x442b4bc348412531%3A0x83868845bc431516!2sJokiv%C3%A4yl%C3%A4%209%2C%2096300%20Rovaniemi!5e0!3m2!1sfi!2sfi!4v1582459878938!5m2!1sfi!2sfi"></iframe>
+							<hr>
+							
+
+							<h3>T43 Object</h3>
+              <p>Lisää ainakin yksi tekemäsi Wordin, Powerpointin ja Excelin tiedosto object-elementillä tähän. Lisää koodiin korkeus ja leveys. Ei toimi Chromessa!</p>
+                           
+							<hr>
+
+							<h3>T44, Usealla img-elementillä tehty kuva</h3>
+              <p>Jos kuva on laitettu palasiksi, jotka esitetään eri img elementeillä, kirjoita yhteen alt-teksti, älä muihin. Alla monta erillistä kuvaa...</p> 
+							
+							<div class = gallery>
+								<img src=images/puu.jpg alt=maisema_puu_kukat>
+								<img src=images/maisema.jpg>
+								<img src=images/kukat.jpg>
+							</div>
+							
+							<br>
+							<br>
+							<br>
+	
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<div class="content">
+						<section>
+							<h3>Yhteystiedot</h3>
+							<p>Merja Marin, Jokiväylä 9, Rovaniemi, merja.marin@redu.fi, 040 768 0273.</p>
+						</section>
+						<section>
+							<h4>Linkkejä</h4>
+							<ul class="alt">
+								<li><a href="https://www.redu.fi">Lapin koulutuskeskus, Redu</a></li>
+								<li><a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5">MDN web docsHTML5</a></li>
+								<li><a href="https://developer.mozilla.org/en-US/docs/Archive/CSS3">MDN CSS3</a></li>
+							</ul>
+						</section>
+						<section>
+							<h4>Nettisivuja</h4>
+							<ul class="plain">
+								<li><a href="https://www.twitter.com"><i class="icon fa-twitter">&nbsp;</i>Twitter</a></li>
+								<li><a href="https://www.instagram.com/?hl=fi"><i class="icon fa-instagram">&nbsp;</i>Instagram</a></li>
+								<li><a href="https://github.com/"><i class="icon fa-github">&nbsp;</i>Github</a></li>
+							</ul>
+						</section>
+					</div>
+					<div class="copyright">
+						&copy; Merja Marin 
+					</div>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html>
+<head>
+   <title> Try It Yourself </title>
+   <style type="text/css">
+      .breadcrumbs {
+         background: #0076ff;
+         padding: 15px;
+      }
+      .breadcrumbs ul {
+         margin: 0;
+         padding: 0;
+      }
+      .breadcrumbs li {
+         display: inline-block;
+      }
+      .breadcrumbs li::before {
+         content: "⟩ "; /* vaihda merkki halutessasi*/
+         color: white;
+         margin: 0 8px;
+      }
+      /* muuta merkkiä, joka lisätään ennen ensimmäistä breadcrumbs linkkiä */
+      .breadcrumbs li:first-child::before {
+         content: "/ "; /*vaihda merkki, jos haluat */
+         color: white;
+         margin: 0 0;
+      }
+      .breadcrumbs li > a {
+         color: white;
+         text-decoration: none;
+         border-bottom: 1px solid white;
+      }
+      .breadcrumbs li:last-child > a {
+         color: white;
+         text-decoration: none;
+         border: none;
+      }
+   </style>
+</head>
+<body>
+   <div class="breadcrumbs">
+      <ul>
+         <li><a href="#"> Koti </a></li>
+         <li><a href="#"> Artikkelit </a></li>
+         <li><a href="#"> Ruoka </a></li>
+      </ul>
+   </div>
+</body>
+</html>

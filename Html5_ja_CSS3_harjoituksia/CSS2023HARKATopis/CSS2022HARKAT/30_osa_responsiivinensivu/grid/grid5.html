@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+    <title>Example</title>
+<style>
+#grid {
+  display: grid;
+  grid-template-rows: 40vh 40vh;
+  grid-auto-columns: 30vw;
+  grid-auto-flow: column;
+  grid-gap: 5px;
+  animation: myAnimation 5s ease 1s 5 alternate forwards;
+}
+#grid > div {
+  background-color: tomato;
+  color: white;
+  font-size: 4vw;
+  padding: 10px;
+}
+
+@keyframes myAnimation {
+  30% {
+  grid-auto-columns: 10vh;
+  }
+  60% {
+  grid-auto-columns: 10vh 20vh 40vh;
+  }
+</style>
+</head>
+<body>
+<div id="grid">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  <div>9</div>
+  <div>10</div>
+   </div>
+</body>
+</html>

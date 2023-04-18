@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Makro layout</title>
+
+    <style>
+
+        body {
+        margin: 0;
+        padding: 0;
+        }
+
+        header, footer {
+        text-align: center;
+        }
+
+        header {
+        padding: 1em;
+        background-color: hsl(140deg 70% 95%);
+        font-size: 1.4em;
+        }
+
+        main {
+        min-height: calc(100vh - 7em);
+        }
+
+        article {
+        background-color: hsl(60deg 70% 95%);
+        }
+
+        aside {
+        background-color: hsl(0deg 70% 95%);
+        }
+
+        article,aside {
+        padding: 1em;
+        margin: 1em;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+      My Website
+    </header>
+    <main>
+      <article>
+        <h1>Web-sivuni</h1>
+        <p>Tässä yksi web-sivuistani.</p>
+        <p>Käytän html:ää (<dfn>HTML</dfn>) rakennteen luomiseksi sivulle.</p>
+        <p>Tässä on tekstikappale, artikkelin sisällä.</p>
+        <p>Käytän myös<code>aside</code> elementtiä sivuasioihin.</p>
+      </article>
+      <aside>
+        <h2>Historiaa</h2>
+        <p>Tiesitkö, että <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">eka koskaan ikinä tehty nettisivu</a> on edelleen olemassa alkuperäisessä osoitteessa?</p>
+        <p>Sivun loi Tim Berners-Lee 90-luvun alussa, ja se toimii edelleen nykyaikaisella verkkoselaimella.</p>
+      </aside>
+    </main>
+    <footer>
+      <small>Footerkin on näillä sivuilla</small>
+    </footer>
+  </body>
+</html>

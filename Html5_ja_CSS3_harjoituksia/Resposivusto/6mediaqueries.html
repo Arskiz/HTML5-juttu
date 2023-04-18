@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+     body {
+        margin: 10px;
+        background-color: lightblue ;
+        color: darkblue ;
+        }
+        :is(h1,h2,h3,p,li) {
+        max-inline-size: initial;
+        margin-block-start: auto;
+        }
+        code {
+        color: var(--color-dark);
+        }
+        /* Väri muuttuu vaaleaksi, kun sivun leveys on välillä 50-60em */
+        @media (min-width: 50em) and (max-width: 60em) {
+        body {
+            background-color: var(--color-mid-dark);
+            color: var(--color-light);
+        }
+        }   
+    </style>
+</head>
+<body>
+    <h1>Mediakyselyjen yhdistäminen</h1>
+    <p>Voit käyttää mediakyselyissäsi monia erilaisia ​​CSS-yksiköitä. Jos sisältösi on enimmäkseen kuvapohjaista, käytä pikseleitä. Jos sisältösi on enimmäkseen tekstipohjaista, on luultavasti järkevämpää käyttää tekstin kokoon perustuvaa yksikköä, kuten "rem" tai "em"</p>
+    <p>Voit myös yhdistää mediakyselyitä soveltaaksesi useampaa kuin yhtä ehtoa. Käytä sanaa "and" yhdistääksesi mediakyselysi.</p>
+
+    <p>Tässä esimerkissä taustaväri muuttuu, mutta vain silloin, kun näkymän leveys on välillä <code>50em</code> ja <code>60em</code>.</p>
+    <p>https://developer.mozilla.org/en-US/docs/Web/CSS/margin-block-start</p>
+    
+      
+</body>
+</html>

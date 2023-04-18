@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fi">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Harjoituksia CSS</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Sisältää Bootstrapin-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="d-flex" id="wrapper">
+            <!-- Sidebar-->
+            <div class="border-end bg-white" id="sidebar-wrapper">
+                <div class="sidebar-heading border-bottom bg-light">Harjoituksia</div>
+                <div class="list-group list-group-flush">
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="index.html">Etusivu</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="1text.html">1 Teksti, text</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="2fonts.html">2 Fontit, fonts</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="3list-style.html">3 Luettelot, lists</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="4tables.html">4 Taulukot, tables</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="5background.html">5 Taustakuvat</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="6yksikötjamitat.html">6 Yksiköt ja mitat</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="7kertausta.html">7 Kertausta</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="8position.html">8 Sijainti, position</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="9display.html">9 Näyttö, display </a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="10border.html">10 Reunat ja ääriviivat</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="11marginpadding.html">11 Marginaalit ja padding</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="12opacity.html">12 Läpinäkyvyys</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="13image.html">13 Kuvat</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="14pseudo.html">14 Pseudoluokat</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="15omakoodi.html">15 oma koodi edellisistä</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="16gradientshadow.html">16 liukuvärjäys ja varjot</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="17icons.html">17 Kuvakkeet</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="18buttons.html">18 Buttonit</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="19animations.html">19 Transform, muunnokset</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="20pagination.html">20 Sivunumerointi</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="21breadcrumbs.html">21 Murupolku</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="22dropdowns.html">22 Pudotusvalikot</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="23nav-bar.html">23 Navigointi</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="24accordion.html">24 Accordion</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="25kaikkeamuuta.html">25 Kaikkea muuta</a>
+                    <a class="list-group-item list-group-item-action list-group-item-light p-3" href="30responsiivinensivu.html">30 Responsiivinen sivu, kaikki</a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper">
+                <!-- Top navigation-->
+                <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+                    <div class="container-fluid">
+                        <button class="btn btn-primary" id="sidebarToggle">Menu</button>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                                <li class="nav-item active"><a class="nav-link" href="index.html">Etusivu</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid">
+                    <h1 class="mt-4">Responsiiviset sivut</h1>
+                    <p>Tehtävissä käydään läpi responsiivisen sivun tekemiseen liittyviä asioita. Tee ohjeen mukaan jokainen tiedosto erikseen. Tai jos osaat jo, tee vain tämän sivun viimeiset tehtävät responsiivisesta sivusta (3 viimeistä tehtävää).</p>
+    
+
+                    <p>Flexbox, grid, media queries, viewport, header, fooder, respons. images </p>
+
+                    
+                    <hr>
+                    
+                    <h2>Viewport</h2>
+                    
+                    <h3>viewport off</h3>
+                    <a href="30_osa_responsiivinensivu/viewport/eiviewport.html">noviewport</a>
+                    <p>Älä käytä tätä, jos haluat responsiiviset sivut</p>
+
+                    <h3>viewport on, responsiivinen siis</h3>
+                    <a href="30_osa_responsiivinensivu/viewport/viewportilla.html">viewport</a>
+                    <p>Tehtävä koodissa</p>
+
+                    <hr>
+
+                    <h2>Media queries, mediakyselyt</h2>
+                    
+                    <a href="https://css-tricks.com/snippets/css/media-queries-for-standard-devices/">media-queries-vinkit-ohjeet</a>
+                    <br>
+                    <br>
+                    <h3>media queries 1</h3>
+                    <a href="30_osa_responsiivinensivu/media_queries/mq_2.html">mediaquery1</a>
+                    <p>Tee pieniä muutoksia väreihin ja teksteihin. Tutki media kyselyjen eri laitteiden kokoja.</p>
+
+                    <h3>media queries 2</h3>
+                    <a href="30_osa_responsiivinensivu/media_queries/mq_3.html">mediaquery2</a>
+                    <p>Vaihda sivun leveyksiä, näet värin vaihtuvan. Tutki tarkemmin, miksi niin tapahtuu. </p>
+                    <hr>
+
+
+                    <h2>Flexbox, joustolaatikot</h2>
+
+                    <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Vinkit-ohjeet</a>
+                    <p>Katso sivuilta esimerkit ja kopioi ne Visual Studio Codeen. Tutki koodeja. Tee oma flex boxeja käyttävä sivu. Katso myös trics.</p>
+                    
+                    <p>Katso vinkit-ohjeet, koodit ja tee omat joustolaatikot!</p>
+                    <h3>flex 1</h3>
+                
+                    <a href="30_osa_responsiivinensivu/flexbox/flex.html">flex1</a>
+                    <p>Tutustu esimerkkiin, miten flex toimii.</p>
+
+
+                    <h3>flex 2</h3>
+                    <a href="30_osa_responsiivinensivu/flexbox/flex19.html">flex2</a>
+                    <p>Tehtävä koodissa</p>
+
+
+                
+
+                    <h3>flex 3</h3>
+                    <a href="30_osa_responsiivinensivu/flexbox/flex20.html">flex3</a>
+                    <p>Tehtävä koodissa</p>
+
+                    <h3>flex 4</h3>
+                    <a href="30_osa_responsiivinensivu/flexbox/flex21.html">flex4</a>
+                    <p>Tehtävä koodissa</p>
+
+                   
+
+                
+                    <h3>flex 5</h3>
+                    <a href="30_osa_responsiivinensivu/flexbox/fb18.html">flex5</a>
+                    <p>Katso koodi</p>
+
+                    <h3>flex 5.5</h3>
+                    <a href="30_osa_responsiivinensivu/flexbox/flex22.html">flex5.5</a>
+                    <p>Tehtävä koodissa</p>
+
+                    <h3>flex 6</h3>
+                    <a href="30_osa_responsiivinensivu/flexbox/flex23.html">flex6</a>
+                    <p>Tehtävä koodissa</p>
+
+                    <h3>flex 7</h3>
+                    <a href="30_osa_responsiivinensivu/flexbox/flex24.html">flex7</a>
+                    <p></p>
+
+                
+
+                    <h3>flex 8</h3>
+                    <a href="30_osa_responsiivinensivu/flexbox/flex25.html">flex8</a>
+                    <p></p>
+
+                    <h3>flex 9</h3>
+                    <a href="30_osa_responsiivinensivu/flexbox/flex26.html">flex9</a>
+                    <p>tasattu keskelle</p>
+
+                    <hr>
+                    <h2>Grid, ruudukot. Katso vinkit ja ohjeet.</h2>
+                 
+
+                    <a href="https://css-tricks.com/snippets/css/complete-guide-grid/">Vinkit-ohjeet</a>
+                    <p>Katso yllä olevat vinkit ja tee oma grid. Alla muutama tyhjä pohja/esimerkki gridin käytöstä.</p>
+                    <br>
+                    <h3>grid1</h3>
+                    <a href="30_osa_responsiivinensivu/grid/grid1.html">grid1</a>
+                    <p></p>
+
+                    <h3>grid2</h3>
+                    <a href="30_osa_responsiivinensivu/grid/grid2.html">grid2</a>
+                    <p>pohja grid</p>
+
+                    <h3>grid3</h3>
+                    <a href="30_osa_responsiivinensivu/grid/grid3.html">grid3</a>
+                    <p>pohja grid</p>
+
+                    <h3>grid4</h3>
+                    <a href="30_osa_responsiivinensivu/grid/grid4.html">grid4</a>
+                    <p></p>
+
+                    <h3>grid5</h3>
+                    <a href="30_osa_responsiivinensivu/grid/grid5.html">grid5</a>
+                    <p></p>
+
+                    <hr>
+                    <h3>Header ja footer 1</h3>
+                    <a href="30_osa_responsiivinensivu/24_header_footer/footer1.html">header_footer1</a>
+                    <p>Muuta headerin ja footerin fontteja ja lisää tietoja.</p>
+                    
+                    <h3>footer 2</h3>
+                    <a href="30_osa_responsiivinensivu/24_header_footer/footer2.html">footer2</a>
+                    <p>Tee oma parempi footer.</p>
+                    <hr>
+            
+                  
+                   <h2>Responsiivinen kuva ja video</h2>
+                  
+                   <a href="https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/">Vinkit-ohjeet</a>
+                    <h3>responsive image 2</h3>
+                    <br>
+                    <a href="30_osa_responsiivinensivu/media_queries/respokuva2.html">responsive_image2</a>
+                    <p>Testaa responsiivisuus kaventamalla ja leventämällä sivua. Pienennä kuvaprosenttia.</p>
+                
+
+                    <h3>responsive video 1, vanha video</h3>
+                    <a href="30_osa_responsiivinensivu/media_queries/respovideo.html">rp_video1</a>
+                    <p>Etsi koneeltasi video ja lisää se sivulle. Tutki koodiakin.</p>
+                    
+                    <hr>
+
+                   
+                    <h2>Responsiiviset sivut </h2>
+                    <br>
+                    <h3>responsiivinen sivu 1</h3>
+                    <a href="30_osa_responsiivinensivu/media_queries/mq1.html">responsiivinen_mediaquery_sivu</a>
+                    <p>Vaihda kuvat ja tekstit. Testaa pohjaa.</p>
+
+                    <h3>responsiivinen sivu 2</h3>
+                    <a href="30_osa_responsiivinensivu/responsiivinensivu/responsiivinensivu2.html">rs2</a>
+                    <p>Testaa tätäkin pohjaa, tehty Bootstrapilla. Vertaa edelliseen pohjaan, mitä eroa huomaat esim. div elementtien käytössä?</p>
+
+                    <h3>responsiivinen sivu 2</h3>
+                    <a href="30_osa_responsiivinensivu/responsiivinensivu/responsiivinensivu3.html">rs3</a>
+                    <p>Testaa tätäkin pohjaa.</p>
+
+                    <hr>
+                    <h3>HOX!!!!Jos tiedät jo paljon asioita responsiivisesta sivun totetuksesta, tee nyt oma responsiivinen sivusto! Jatka sitten bootstrapin ja pienten projektien puolelle.</h3>
+
+
+
+
+                   
+
+                  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html>
+<head>
+   <title> Kokeile </title>
+   <style>
+      .pagination-container {
+         text-align: center;
+      }
+      .pagination {
+         display: inline-block; /* saa ul:n toimimaan kuin sisäinen elementti, mutta sillä on säädettävä leveys ja korkeus */
+         margin: 0;
+         padding: 0;
+         border: 1px solid #0076ff;
+      }
+      .pagination li {
+         display: inline; /* saa li:n toimimaan rivielementeinä*/
+      }
+      .pagination a {
+         color: black;
+         text-decoration: none;
+         padding: 7px 14px;
+         float: left; /*vasemmalle kelluvat */
+         border-right: 1px solid #0076ff;
+         transition-duration: 1s; /* asettaa vaikutuksen keston */
+      }
+      .pagination a:hover {
+         background: #0076ff;
+         color: white;
+      }
+      .pagination li:last-child > a { /* valitsee viimeisen linkin*/
+         border: none; /*poistaa reunukset siitä*/
+      }
+   </style>
+</head>
+<body>
+   <div class="pagination-container">
+      <ul class="pagination">
+         <li><a href="#">⟨</a></li>
+         <li><a href="#">1</a></li>
+         <li><a href="#">2</a></li>
+         <li><a href="#">3</a></li>
+         <li><a href="#">4</a></li>
+         <li><a href="#">5</a></li>
+         <li><a href="#">⟩</a></li>
+      </ul>
+   </div>
+   <p> Napauta linkkejä nähdäksesi hiiren (osoittimen) tehosteet. </p>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html>
+<head>
+   <title> Tee oma murupolku </title>
+   <style>
+      .breadcrumbs ul {
+         margin: 0;
+         padding: 0;
+      }
+      .breadcrumbs li {
+         display: inline-block; /* näyttää luettelon kohteet rivillä säädettävällä leveydellä ja korkeudella */
+      }
+      .breadcrumbs li::before {
+         content: "⟩ "; /* vaihda merkki, jos haluat */
+      }
+   </style>
+</head>
+<body>
+   <div class="breadcrumbs">
+      <ul>
+         <li><a href="#"> Koti </a></li>
+         <li><a href="#"> Artikkelit </a></li>
+         <li><a href="#">Ruoka </a></li>
+      </ul>
+   </div>
+</body>
+</html>

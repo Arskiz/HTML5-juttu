@@ -1,0 +1,50 @@
+<!DOCTYPE html> 
+<html>
+<head>
+   <title> Try It Yourself </title>
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+      html, body {
+         margin: 0;
+         padding: 0;
+      }
+      .row::after {
+         content: "";
+         display: block;
+         clear: both;
+      }
+      div[class*="col-"] {
+         float: left;
+         height: 200px;
+         background: lightgrey;
+         border-right: 1px solid black;
+      }
+      .col-1 { width: 8.33333333% }
+      .col-2 { width: 16.66666667% }
+      .col-3 { width: 25% }
+      .col-4 { width: 33.33333333% }
+      .col-5 { width: 41.66666667% }
+      .col-6 { width: 50% }
+      .col-7 { width: 58.33333333% }
+      .col-8 { width: 66.66666667% }
+      .col-9 { width: 75% }
+      .col-10 { width: 83.33333333% }
+      .col-11 { width: 91.66666667% }
+      .col-12 { width: 100% }
+   </style>
+</head>
+<body>
+   <div class="row">
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+      <div class="col-3"></div>
+      <!-- the following codes will be rendered onto the next row -->
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+      <div class="col-4"></div>
+   </div>
+</body>
+</html>

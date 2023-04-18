@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body {
+        max-inline-size: 88em;
+        padding: var(--metric-box-spacing);
+        margin: auto;
+        }
+        img {
+        max-inline-size: 100%;
+        block-size: auto;
+        inline-size: 100%;
+        }
+        main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1em;
+        }
+        main section {
+        flex-basis: 22em;
+        flex-grow: 1;
+        padding: var(--metric-box-spacing);
+        background-color: var(--color-off-white);
+        border-radius: var(--metric-radius);
+        box-shadow: var(--generic-shadow);
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <p>Tämä on esittelyteksti. Pienellä näytöllä se näkyy ennen kuvaa. Laajemmalla näytöllä kuva näkyy tämän tekstin vieressä.</p>
+
+        </section>
+        <section>
+          <img
+           src="https://storage.googleapis.com/web-dev-uploads/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/PEK3BODIcHQdpOLSc3Gg.jpg"
+           alt="Portrait of a happy-looking handsome dog with a ball in its mouth."
+           width="300"
+           height="200"
+           loading="lazy"
+           decoding="async"
+           srcset="https://storage.googleapis.com/web-dev-uploads/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/PEK3BODIcHQdpOLSc3Gg.jpg 300w,
+            https://storage.googleapis.com/web-dev-uploads/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/7jLnRoFUlcDBkm6kkaT5.jpg 600w,
+            https://storage.googleapis.com/web-dev-uploads/image/KT4TDYaWOHYfN59zz6Rc0X4k4MH3/ehboim8g0fQYR5Q39rbl.jpg 1200w"
+           sizes="(min-width: 66em) 33vw,
+            (min-width: 44em) 50vw,
+            100vw"
+          >
+        </section>
+        <section>
+            <p>Tässä on lisää tekstiä. Pienellä näytöllä tämä teksti näkyy kuvan jälkeen. Vain kun näkymä on tarpeeksi leveä, kaikki kolme sisältöä näkyvät vierekkäin.</p>
+        </section>
+      </main>
+</body>
+</html>

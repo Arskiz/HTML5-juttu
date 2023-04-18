@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <title>Fontin koko</title>
+    <style>
+
+
+
+		body {
+			font-size: 14px;
+		}
+		h1 {
+			font-size: 2em;
+		}
+
+		h2 {
+			font-size: calc(0.75rem + 1.5vw);
+		}
+
+		h3 {
+			font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+		}
+
+
+    </style>
+</head>
+<body>
+	<h1>Tämä on h1 otsikko, ei responsiivinen</h1>
+	<h2>Tässä on h2 otsikko, responsiivinen, vaihda sivun leveyttä, niin huomaat.</h2>
+	<h3>Tekstin koon kiinnitys, responsiivinen</h3>
+    <p>Tässä on p eli kappale.</p>
+</body>
+</html> 

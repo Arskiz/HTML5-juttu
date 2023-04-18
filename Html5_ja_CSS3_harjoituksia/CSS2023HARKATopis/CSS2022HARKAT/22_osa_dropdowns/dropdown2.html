@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> Try It Yourself </title>
+   <style>
+      .dd {
+         position: relative;
+         display: inline-block;
+      }
+      .dd-content {
+         position: absolute;
+         display: none;
+      }
+      .dd:hover > .dd-content {
+         display: block;
+      }
+   </style>
+</head>
+<body>   
+   <div class="dd">
+      <span class="dd-button"> Hover or Tap me! </span>
+      <div class="dd-content">
+         <p> This is where the dropdown content goes. </p>
+      </div>
+   </div>
+</body>
+</html>
+

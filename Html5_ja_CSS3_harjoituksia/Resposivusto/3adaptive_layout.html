@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Adaptive layout</title>
+
+<style>
+        body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+@media all and (min-width: 800px) {
+  article {
+    width: 540px;
+    float: left;
+  }
+  
+  aside {
+    width: 250px;
+    float: left;
+    margin-left: 10px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  article {
+    width: 800px;
+    float: left;
+  }
+  
+  aside {
+    width: 350px;
+    float: left;
+    margin-left: 50px;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  h1 {
+    width: 400px;
+    float: left;
+  }
+  
+  article {
+    width: 800px;
+    float: left;
+  }
+  
+  aside {
+    width: 350px;
+    float: left;
+    margin-left: 50px;
+  }
+}
+
+</style>
+</head>
+
+<body>
+    <h1>Adaptive design</h1>
+<article>
+    <p>Kun mediakyselyt saapuivat CSS:ään, se avasi oven asettelujen joustamiseen. Mutta kehittäjät olivat edelleen sitä mieltä että on mukavimpi tehdä kiinteäleveisiä asetteluja. </p>
+    <p>Adaptive design avulla suunnittelijat pystyivät tarjoamaan asetteluja, jotka näyttivät hyviltä muutamassa eri koossa, mutta suunnittelu ei koskaan näyttänyt aivan oikealta näiden kokojen välillä. Ylimääräisen tilan ongelma jatkui, vaikka se ei ollutkaan niin paha kuin kiinteän leveyden asettelussa.</p>
+  </article>
+  <syrjään>
+    <p>Tämä tekniikka ei lopulta ollut kovin suosittu. Termiä "adaptiivinen" käytettiin myös viittaamaan muihin lähestymistapoihin, joten se voi olla hämmentävä kuvaaja melko kapealle tekniikalle.</p>
+    <p>Tässä käytetään CSS-ominaisuutta <code>float</code> sarakkeiden luomiseen. Se oli suosittu tekniikka ennen CSS-grid tai flexboxin olemassaoloa.</p>
+  
+  
+</aside>
+</body>
+</html>

@@ -1,0 +1,124 @@
+/* Tässä ei ole käytetty teemaa, vaan itse tehtyjä css-tyylejä... */
+
+@charset "utf-8";
+
+
+/* lohko; yhtä tyhjää riviä vastaava ylä- ja alareunus, tee elementille ylä- ja alareunus, älä tyhjää p-elementtiä html-koodiin */
+p{
+	display:block;
+	margin-top:1em;
+	margin-bottom: 1em;
+	}
+
+/*Tässä poistetaan tyhjä tila listasta, joka tehty divillä ja p-elementillä*/
+.p ul, p.p{
+	margin-top:0;
+	margin-bottom:0;
+	}
+/*Hr vaakaviiva, joka inset-tyylinen, 2 pikselijä leveä, harmaa, keskitetty, laidasta laitaan ulottuva, tyhjää tilaa ylä- ja alapuolella 0.5em. KUITENKIN, jos sivulle halutaan vaakaviiva ilman aihetta erottavaa merkitystä on paras käyttää tyyliohjetta, ei hr-elementtiä. Vaakaviiva on helppo tehdä elementin ylä- tai alapuolelle esim. footeriin border ominaisuudella*/
+hr{
+	display:block;
+	color:pink;
+	border-style:inset;
+	border-width:2px;
+	margin: 0.5em auto;
+	}
+/*Pre-elementti lohkon; 1 em:n reunus yllä ja alla, tekstin rivitys ja välilyöntien käyttö säilyy; tasalevyinen fontti usein pienemmässä fonttikoossa, tässä fontti muutettu*/
+pre
+{
+	display:block;
+	margin-top: 1em;
+	margin-bottom:1em;
+	white-space:pre;
+	font: 100% Cambria, sans-serif;
+	}
+/*Sitaatin eli lainauksen muotoilut, lohkossa ja marginaalit*/
+blockquote{
+	display:block;
+	margin:1em 40px;
+	}
+/*tässä viitattu luokkaan .viite, joka liittyy blockquoteen eli sitaattiin, tässä muotoiltu class viitettä siis*/
+.viite {
+		margin-left: 6em;
+		font-size:85%;
+		}
+/*Lohko, jolla on 1em:n reunus ylä- ja alapuolella; nämä reunukset puuttuu jos elementi on listan sisällä ks. tekstiä. 0 pikselin sisennys, joka on suuntaisuusriippuva, luettelomerkkinä numerot*/
+ol {
+	display: block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-left: 40 px;
+	list-style-type:decimal;
+	}
+/*Navigointi: Lohko, jolla on 1 em:n reunus ylä-ja alapuoeleea, nämä reunukset puuttuu, jos ollaan toisen listan siällä. 40px sisennys, joka on suuntaisuusriippuva, luetelmamerkki, listojen sisäkkäisyys voi muuttaa tätä*/	
+ul{
+	display:block;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	padding-left: 40px;
+	list-style-type:disc;
+	}
+/*ul listan tyyli*/	
+nav ul{
+	margin: 0;
+	padding: 0;
+	}
+/*niin, tässä muotoillaan vaakapalkiksi navigaatio*/	
+nav li {
+	display:inline-block;
+	width: 7em;
+	border:solid thin;
+	background: rgb(228, 191, 30); color:black;
+	text-align:center;
+	margin-right: 0.6em;
+	}
+/*Ei alleviivausta linkeissä*/	
+nav a
+{
+	text-decoration: none;
+	}
+/*lohko, onka yllä ja alla on em:n korkuinen reunus. Reunukset puuttuu, jos ollaan toisen listan sisällä*/
+
+dl{
+	display: block;
+	margin-top: 1em;
+	margin-bottom: em;
+	}
+dt{
+	display: block;
+	}
+dd{
+	display: block;
+	margin-left: 40px;
+	}
+
+/*Lohko, jolla on 1em reunus yllä ja alla sekä 40px reunus vasemmalla ja oikealla*/
+figure {
+	display: block;
+	margin: 1em 40px;
+    }
+    
+/* videon leveys*/
+video {
+	width: 400px;
+}
+img{
+	
+}
+	
+/* Taulukon ulkoasu*/
+table{
+	font-family: Calibri, sans-serif;
+	border-collapse: collapse;
+	}
+	
+	th, td {
+	border: solid 1px gray;
+	padding: 0 0.3em;
+	}
+	tbody th {
+	text-align: left;
+	}
+	td{
+	text-align: right;
+	}

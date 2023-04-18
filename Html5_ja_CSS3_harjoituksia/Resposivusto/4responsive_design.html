@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiivinen layout</title>
+</head>
+
+<style>
+body {
+  font-family: sans-serif;
+  line-height: 1.5;
+  padding: 0 16px;
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+@media all and (min-width: 800px) {
+  article {
+    width: 66%;
+    float: left;
+  }
+  
+  aside {
+    width: 33%;
+    float: right;
+  }
+}
+
+@media all and (min-width: 1600px) {
+  h1 {
+    width: 22.5%;
+    float: left;
+  }
+  
+  article {
+    width: 50%;
+    float: left;
+  }
+  
+  aside {
+    width: 22.5%;
+    float: right;
+  }
+}
+
+</style>
+<body>
+    
+    <h1>Responsiivinen muotoilu</h1>
+<artikkeli>
+  <p>Jos mukautuvat asettelut ovat yhdistelmä mediakyselyitä ja kiinteäleveyksiä asetteluja, responsiivinen verkkosuunnittelu on yhdistelmä mediakyselyitä ja liquid asetteluja. Ethan Marcotte keksi termin <a href="https://alistapart.com/article/responsive-web-design/">artikkelissa A List Apart -lehdessä</a> vuonna 2010.</p>
+  <p>Ethan määritteli responsiiviselle suunnittelulle kolme kriteeriä: Fluid grid, fluid media, media queries</p>
+ 
+ <p>Jos sivusto olisi responsiivinen, sen asettelu ja kuvat näyttäisivät hyvältä kaikilla laitteilla </p>
+</article>
+<aside>
+  <p>Tässä esimerkissä käytetään CSS-ominaisuutta <code>float</code> sarakkeiden luomiseen. Se oli suosittu tekniikka ennen CSS-gridin tai flexboxin olemassaoloa.</p>
+</aside>
+
+
+</body>
+</html>

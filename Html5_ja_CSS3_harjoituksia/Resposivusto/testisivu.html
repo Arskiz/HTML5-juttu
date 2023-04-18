@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    @media (min-width: 30em) {
+ 
+    html {
+        font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+        text-align: start;
+        
+        }
+    }
+
+        @media (min-width: 40em) {
+        html {
+        font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+       
+        }
+
+        }
+
+        @media (min-width: 50em) {
+        html {
+        font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+        }
+        }
+
+        @media (min-width: 60em) {
+        html {
+        font-size: clamp(1rem, 0.75rem + 1.5vw, 2rem);
+        text-align: end;
+        margin-inline-start: 10fr;
+        max-inline-size: 66ch;
+        }
+    }
+
+</style>
+
+</head>
+<body>
+    <header>Tässä on header</header>
+    <main>
+    <article>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi possimus soluta porro? Reprehenderit ullam eligendi natus, reiciendis delectus enim doloribus aut ipsum, veniam similique modi minima vel suscipit autem. Esse.
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque necessitatibus quia in. Nesciunt delectus beatae maiores vel eveniet perferendis mollitia. Facere error placeat repellat est illum atque ad neque rerum.
+
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tempore fugit aspernatur aliquid voluptates odit quae laboriosam, repudiandae deleniti, atque expedita amet sint deserunt fuga. Eum autem omnis libero cumque!
+    </article>
+    <aside>sivuasiaa</aside>
+
+    <picture>
+        <source srcset="/images/kevät1.jpg" media="(min-width: 60em)">
+        <source srcset="/images/koski1.jpg" media="(min-width: 40em)">
+        <img src="/images/kevät3.jpg" alt="A description of the image."
+        width="300" height="200" loading="lazy" decoding="async">
+      </picture>
+      
+    <footer>tässä on footer</footer>
+    
+</main>
+</body>
+</html>

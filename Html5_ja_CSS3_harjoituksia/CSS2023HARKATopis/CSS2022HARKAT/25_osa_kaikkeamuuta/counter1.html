@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <title>Counter</title>
+    <style>            
+		body {
+			counter-reset: section;
+		}
+		h1 {
+			counter-reset: category;
+		}
+		h1:before {
+			counter-increment: section;
+			content: "Section " counter(section) ". ";
+		}
+		h2:before {
+			counter-increment: category;
+			content: counter(section) "." counter(category) " ";
+		}  
+    </style>
+</head>
+<body>
+    <h1>Tutoriaalit</h1>
+    <h2>HTML Tutoriaali</h2>
+    <h2>CSS Tutoriaali</h2>
+    <h1>Referenssit</h1>
+    <h2>HTML elementit</h2>
+    <h2>CSS ominaisuudet</h2>
+	<p>Kysymys: Mitä couter tekee?</p>
+
+</body>
+</html> 

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title> kaikki hoverit </title>
+   <style>
+      div {
+         width: 100px;
+         height: 100px;
+         background: #173459;
+         color: #f8f9f9;
+         border: 5px solid #903C56;
+         transition-duration: 2s;
+      }
+      #translate:hover {
+         transform: translate(30px, 40px);
+      }
+      #rotate:hover {
+         transform: rotate(-90deg);
+      }
+      #scale:hover {
+         transform: scale(.5);
+      }
+      #skew:hover {
+         transform: skew(30deg, 30deg);
+      }
+   </style>
+</head>
+<body>
+   <p> Käynnistä tehosteet napauttamalla elementtejä. </p>
+   <div id="translate"> Siirrä minut! </div>
+   <br>
+   <div id="rotate"> Pyöritä minua! </div>
+   <br>
+   <div id="scale"> Skaalaa minut! </div>
+   <br>
+   <div id="skew"> Väännä minut! </div>
+</body>
+</html>
