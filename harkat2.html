@@ -7,7 +7,7 @@
     <title>Harkat 2</title>
 </head>
 <body>
-    <hr>
+    <div id="main">
         <!-- Tehtävä 21-->
         <h2>Tehtävä 21 - Linkki</h2>
         <a href="https://youtube.com">Linkki Youtubeen</a>
@@ -129,6 +129,8 @@ Myyjä: Vihainen</code></pre>
             <br>
             <button id="send">Lähetä</button>
         </form>
+    </div>
+        
 
     </body>
     <style>
@@ -166,18 +168,22 @@ Myyjä: Vihainen</code></pre>
             display: flex;
             justify-content: center;
         }
-        h2{
-            text-align: center;
-        }
         h3{
             text-align: center;
         }
-        body {
-            background: rgb(0, 192, 192);
+        body{
+        background: coral;
+        text-align: center;
         }
-        hr {
-            align-self: center;
-            border-color: rgb(40, 167, 167);
+        h2{
+            border-bottom: cyan;
+        }
+        #main{
+            border-style: groove;
+            border-color: black;
+        }
+        hr{
+            border-color: black;
         }
     </style>
     <script>

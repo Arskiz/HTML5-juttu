@@ -7,12 +7,115 @@
     <title>Harkat 3</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="harkat1.html">Harjoitukset 1 - tiedosto</a>
-            <li><a href="harkat2.html">Harjoitukset 2 - tiedosto</a>
-            <li><a href="harkat3.html">Harjoitukset 3 - tiedosto</a>
-        </ul>
+    <div id="main"> 
+        <h2>Navigointi:</h2>
+        <nav>
+            <ul>
+                <li><a href="harkat1.html">Harjoitukset 1 - tiedosto</a>
+                <li><a href="harkat2.html">Harjoitukset 2 - tiedosto</a>
+                <li><a href="harkat3.html">Harjoitukset 3 - tiedosto</a>
+            </ul>
+            <hr>
+    
+            <!-- Tehtävä 33-->
+            <h2>Tehtävä 33 - Video linkillä</h2>
+            <br><br><a href="images/video.mp4"> Video</a>
+            <hr>
+    
+            <!-- Tehtävä 34-->
+            <h2>Tehtävä 34 - Liitä video soittimen kanssa</h2>
+            <p>Video:</p>
+            <video src=images/video.mp4 id="omavideo" controls></video>
+            <hr>
+    
+             <!-- Tehtävä 35-->
+             <h2>Tehtävä 35 - Painike joka avaa yllä olevan videon</h2>
+             <input type="button" value="▶" onclick="document.getElementsByTagName('video') [0].play()">
+             <input type="button" value="⏸" onclick="document.getElementsByTagName('video') [0].pause()">
+             <hr>
+    
+             <!-- Tehtävä 36-->
+             <h2>Tehtävä 36 - Kuvan upotus</h2>
+             <img src="images/puu.png" alt="steve" class="vasen">
+             <hr>
+    
+             <!-- Tehtävä 37-->
+             <h2>Tehtävä 37 - Kuva ja kuvateksti</h2>
+             <img src="images/puu.png" alt="steve" class="vasen">
+             <p id="kuvateksti">Steve hakkaamassa puuta</p>
+             <hr>
+    
+             <!-- Tehtävä 38-->
+             <h2>Tehtävä 38 - Linkillinen painike</h2>
+             <p><a href="http://www.redu.fi"><img src="images/logo.png" alt="logo"></a></p>
+             <hr>
+             
+             <!-- Tehtävä 39-->
+             <h2>Tehtävä 39 - Ulkoisen sisällön upotus</h2>
+             <aside>  
+                <iframe src="https://www.digitoday.fi" title="Digitoday"></iframe>           
+             </aside>
+             <hr>
+             
+             <!-- Tehtävä 40-->
+             <h2>Tehtävä 40 - Kuvakkeet</h2>
+             <a href="upotettu_sisalto.php"><img src="images/ostoskori.png" alt="ostoskori"></a>
+             <hr>
+    
+             <!-- Tehtävä 41-->
+             <h2>Tehtävä 41 - Iframella sivun lisäys</h2>
+             <iframe src="harkat1.html" frameborder="1"></iframe>
+             <hr>
+    
+             <!-- Tehtävä 42-->
+             <h2>Tehtävä 42 - Googlen kartan upotus</h2>
+             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1592.1400336538534!2d25.724744116008086!3d66.481149684704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x442b4bc348412531%3A0x83868845bc431516!2sJokiv%C3%A4yl%C3%A4%209%2C%2096300%20Rovaniemi!5e0!3m2!1sfi!2sfi!4v1582459878938!5m2!1sfi!2sfi" frameborder="1"></iframe>
+             <hr>
+    
+             <!-- Tehtävä 43-->
+             <h2>Tehtävä 43 - Objektit</h2>
+             <p>Word:</p>
+             <object data="files/word.docx" type="word"></object>
+             <p>Powerpoint:</p>
+             <object data="files/powerpoint.pptx" type="powerpoint"></object>
+             <p>Excel:</p>
+             <object data="files/excel.xlsx" type="excel"></object>
+             <hr>
+    
+             <!-- Tehtävä 44-->
+             <h2>Tehtävä 44 - Usealla img-elementillä tehty kuva</h2>
+             <div class="gallery">
+                <img src="images/puu.png" alt="puu_kuva">
+                <img src="images/monkey.jfif" alt="manki_kuva">
+                <p>(Ja huono on xd)</p>
+             </div>
+    </div>
+    
+
+         <hr>
     </nav>
 </body>
+<style>
+    #omavideo {
+        width: 400px;
+    }
+    img{
+        size: 50%;
+    }
+    body{
+        background: coral;
+        text-align: center;
+    }
+    h2{
+        border-bottom: cyan;
+    }
+    #main{
+        border-style: groove;
+        border-color: black;
+    }
+    hr{
+        border-color: black;
+    }
+    
+</style>
 </html>
