@@ -1,0 +1,326 @@
+/* Tehtävä 1*/
+#demo{
+    font-size: 4rem;
+    font-family: 'Bruno Ace SC', cursive;
+
+    background: linear-gradient(to right, white, silver);
+    border: solid gray 0.2em;
+    border-radius: 1em;
+    padding: 0.1em 0.3em;
+}
+#demotext{
+    transform:skewX(20deg);
+    display: inline-block;
+}
+
+/* Tehtävä 2*/
+.pysty{
+    width: 0.9em;
+    word-break: break-all;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+/* Tehtävä 3*/
+p.kasvu{
+    transition-property: font-size, text-shadow;
+    transition-duration: 5s;
+}
+
+/* Tehtävä 4*/
+p.liikkuu{
+    transition-property: margin-left;
+    transition-duration: 5s;
+}
+
+/* Tehtävä 5*/
+h1.rotate{
+    transform: rotate(20deg);
+}
+h3.scaleY{
+    transform: scaleY(4);
+}
+p.skewX{
+    transform: skewX(-40deg);
+}
+h4.skewY{
+    transform: skewY(15deg);
+}
+
+/* Tehtävä 7*/
+h1.t7{
+    font: 3em;
+    color: green;
+}
+.muutos{
+    animation-name: kellastu;
+    animation-delay: 5s;
+    color: yellow;
+}
+
+@keyframes kellastu {
+    from{
+        color: green;
+    }
+    70%{
+        color: orange;
+    }
+    to{
+        color: yellow;
+    }
+}
+
+/* Tehtävä 8 */
+p.varjostus{
+    font: 36pt Arial Black;
+    background: hsla(38, 100%, 66%, 1);
+    text-shadow: -2px 0 #999, 0 2px #999;
+}
+p.varjostus2{
+    -webkit-text-stroke: 2px #999;
+    overflow-x: -webkit-marquee;
+}
+h1.varjostus{
+    font: 36pt Arial Black;
+    text-decoration: blink;
+    -webkit-box-reflect: below -15px -webkit-gradient(linear, left top, left bottom, from(transform), to(rgba(255,255,0.8)));
+}
+
+/* Tehtävä 9 */
+#nayte{
+    animation-name: varinvaihto;
+    animation-duration: 5s;
+    background: red;
+}
+@keyframes varinvaihto {
+    from{
+        background: blue;
+    }
+    to{
+        background: red;
+    }
+}
+
+/* Tehtävä 10 */
+h1.hsla{
+background: hsla(38, 100%, 66%, 1);
+}
+
+body.hsla{
+    background: hsla(26, 100%, 61%, 1);
+    border-radius: 5%;
+    padding: 10%;
+
+
+    transition-property: all;
+    transition-duration: 1s;
+}
+.mainDiv{
+    background: rgb(255, 131, 36);
+    padding: 1%;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+/* Tehtävä 11 */
+div{
+    background-color: yellow;
+    border-radius: 5%;
+    border: rgb(141, 141, 0);
+    border-style: groove;
+
+    transition-property: all;
+    transition-duration: 3s;
+}
+.light{
+    opacity: 0.2;;
+}
+.medium{
+    opacity: 0.5;
+}
+.heavy{
+    opacity: 0.9;
+}
+
+/* Tehtävä 12 */
+h1.green{
+    color: green;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+div.bgdiv{
+    background: rgb(0, 151, 19);
+    padding: 10px;
+    text-align: justify;
+}
+
+.eka{
+    background: rgba(0, 151, 19, 0.1);
+}
+
+.toka{
+    background: rgba(0, 151, 19, 0.3);
+}
+
+.kolmas{
+    background: rgba(0, 151, 19, 0.6);
+}
+
+/* Tehtävä 13 */
+.contain{
+    background-image: url(https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png);
+  background-size: contain;
+  width: 160px;
+  height: 160px;
+  border: 2px solid;
+  color: black;
+  resize: both;
+  overflow: scroll;
+}
+
+.cover{
+    background-image: url(https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png);
+  background-size: cover;
+  width: 160px;
+  height: 160px;
+  border: 2px solid;
+  color: black;
+  resize: both;
+  overflow: scroll;
+}
+
+.fullSize{
+    background-image: url(https://www.mozilla.org/media/img/logos/firefox/logo-quantum.9c5e96634f92.png);
+    background-size: 300px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid;
+    text-shadow: white 0px 0px 2px;
+    font-size: 16px;
+}
+
+/* Tehtävä 14 */
+.demoDiv{
+    border: 1px solid black;
+    background: url(https://2.bp.blogspot.com/-hz9FBgy2f_0/T9p2v8FGXLI/AAAAAAAAAMc/cQN1A_ldxcE/s1600/185px-Finger_for_button.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 15px;
+}
+
+/* Tehtävä 15 */
+.asettelu{
+    display: flex;
+    flex-flow: row wrap;
+}
+.ots{
+    display: block;
+    width: 25%;
+}
+.sis{
+    display: inline-flex;
+    width: 25%;
+}
+.oh{
+    display: inline-flex;
+    width: 25%;
+}
+
+/* NAVIGOINTI*/
+#NavOpenCloseButton{
+    color: rgba(253, 175, 175, 100);
+    border-radius: 15%;
+    position: fixed;
+    border-color: rgba(255, 74, 74, 0.7);
+    background-color: rgba(255, 0, 0, 0.7);
+
+    transition: all;
+    transition-duration: 0.3s;
+
+}
+
+#NavOpenCloseButton:hover{
+    background-color: rgba(221, 71, 71, 0.5);
+    color: rgb(0, 0, 0);
+}
+
+#NavOpenCloseButton:active{
+    background-color: rgba(221, 70, 70, 0.3);
+    color: rgb(212, 187, 41);
+}
+
+.NavMenu{
+    position: absolute;
+    display:none;
+    background-color: rgba(255, 74, 74, 0.7);
+    width: fit-content;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    left: 5%;
+    
+    transition: all;
+    transition-duration: 0.3s;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
+/* HARKAT 1 */
+blockquote{
+    display: flex;
+    justify-content: center;
+}
+cite{
+    display: flex;
+    justify-content: center;
+}
+em{
+    display: flex;
+    justify-content: center;
+}
+code{
+    background: rgb(160, 160, 160);
+    border-style:groove;
+    border-color: rgb(163, 163, 163);
+    border-width: 2px;
+}
+.ympyrä {
+    width: 4em;
+    height: 3en;
+    background: red;
+    border-radius: 1em 0.3em;
+    display: table-cell;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#main{
+    border-style: groove;
+    border-color: black;
+}
+
+
+
+
+
+
+
+
+
+/* HR */
+hr{
+    border-radius: 4%;
+    border: black;
+    border-style: groove;
+}
