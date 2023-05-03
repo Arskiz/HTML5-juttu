@@ -109,8 +109,9 @@ background: hsla(38, 100%, 66%, 1);
 
 body.hsla{
     background: hsla(26, 100%, 61%, 1);
-    border-radius: 5%;
+    border-radius: 5px;
     padding: 10%;
+    
 
 
     transition-property: all;
@@ -121,12 +122,24 @@ body.hsla{
     padding: 1%;
     transition-property: all;
     transition-duration: 1s;
+    border-radius: 10px;
+    border-color: black;
+    border-style: groove;
+}
+
+.mainPassDiv{
+    background: rgb(0, 8, 85);
+    border-color: red;
+    background-color: rgba(255, 0, 0, 0.5);
+    padding: 10%;
+    transition-property: all;
+    transition-duration: 1s;
 }
 
 /* Tehtävä 11 */
 div{
-    background-color: yellow;
-    border-radius: 5%;
+    background-color: rgb(255, 174, 0);
+    border-radius: 10px;
     border: rgb(141, 141, 0);
     border-style: groove;
 
@@ -148,9 +161,75 @@ h1.green{
     color: green;
 }
 
-h1, h2{
+h1, h2, h3, h4, h5{
     text-align: center;
 }
+
+.Center{
+    text-align: center;
+}
+.password{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all;
+    transition-duration: 0.3s;
+}
+.password:hover{
+    color: rgb(0, 195, 255);
+}
+
+.passButton{
+    color: white;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgba(255, 0, 0, 0.4);
+    border-radius: 10px;
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.8);
+
+    transition: all;
+    transition-duration: 0.3s;
+}
+.passButton:hover{
+    color: rgb(51, 255, 0);
+    background-color: rgba(255, 140, 140, 0.4);
+    border-radius: 5%px;
+    border-color: rgba(255, 51, 51, 0.8);
+}
+.passButton:active{
+    color: rgb(255, 0, 221);
+    background-color: rgba(255, 44, 44, 0.4);
+    border-radius: 5px;
+    border-color: rgba(255, 0, 0, 0.8);
+}
+
+#RespoForm {
+    text-align: center;
+    color: white;
+    background-color: rgba(255, 140, 140, 0.4);
+    border-color: rgba(255, 51, 51, 0.8);
+    border-width: 5%;
+    margin-left: 40%;
+    margin-right: 40%;
+    border-radius: 20px;
+    border-style: groove;
+    transition: all;
+    transition-duration: 3s;
+  }
+  
+  #RespoForm input,
+  #RespoForm select,
+  #RespoForm textarea {
+    display: block;
+  }
+
+  #RespoForm:hover{
+      background-color: rgb(0, 151, 19);
+  }
+  #RespoForm:active{
+    background-color: rgb(0, 255, 34);
+  }
 
 div.bgdiv{
     background: rgb(0, 151, 19);
@@ -233,9 +312,11 @@ div.bgdiv{
 /* NAVIGOINTI*/
 #NavOpenCloseButton{
     color: rgba(253, 175, 175, 100);
-    border-radius: 15%;
+    border-radius: 15px;
     position: fixed;
-    border-color: rgba(255, 74, 74, 0.7);
+    border-style: groove;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.7);
     background-color: rgba(255, 0, 0, 0.7);
 
     transition: all;
@@ -262,6 +343,10 @@ div.bgdiv{
     padding: 0;
     z-index: 9999;
     left: 5%;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: black;
+    border-width: 1px;
     
     transition: all;
     transition-duration: 0.3s;
@@ -269,11 +354,55 @@ div.bgdiv{
 
 ul{
     list-style: none;
+    padding-right: 5px;
 }
 
 
 
 /* HARKAT 1 */
+blockquote{
+    display: flex;
+    justify-content: center;
+}
+cite{
+    display: flex;
+    justify-content: center;
+}
+em{
+    display: flex;
+    justify-content: center;
+}
+code{
+    background: rgb(160, 160, 160);
+    border-style: groove;
+    border-color: rgb(163, 163, 163);
+    border-width: 2px;
+}
+.ympyrä {
+    width: 4em;
+    height: 3en;
+    background: red;
+    border-radius: 1em 0.3em;
+    display: table-cell;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+#main{
+    border-style: groove;
+    border-color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+  }
+
+/* HARKAT 2*/
 blockquote{
     display: flex;
     justify-content: center;
@@ -300,13 +429,29 @@ code{
     display: table-cell;
     text-align: center;
 
+}
+p{
+    text-align: center;
+}
+h1{
     display: flex;
     justify-content: center;
-
 }
-
+h3{
+    text-align: center;
+}
+body{
+background: coral;
+text-align: center;
+}
+h2{
+    border-bottom: cyan;
+}
 #main{
     border-style: groove;
+    border-color: black;
+}
+hr{
     border-color: black;
 }
 
@@ -314,13 +459,9 @@ code{
 
 
 
-
-
-
-
 /* HR */
 hr{
-    border-radius: 4%;
+    border-radius: 4px;
     border: black;
     border-style: groove;
 }
