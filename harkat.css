@@ -514,6 +514,11 @@ hr{
 
 li{
     color: black;
+    background-color: chocolate;
+}
+
+#selected{
+    background-color: chartreuse;
 }
 
 body{
