@@ -2,14 +2,13 @@ let avattu = false;
 let Counter = 0;
 let currentNumber = 0;
 let oldPasswords = [];
-//Tehtävä 6
+//Tehtävä 7
 function demoa(){
     document.getElementById("t6h1").className = 'muutos';
 }
 
 // NAVIGOINTI
 function NavOpen(){
-    let Menu = document.getElementById("NavMenu");
     
     if(!avattu)
     {

@@ -7,45 +7,54 @@
     <link rel="stylesheet" href="harkat.css">
     <title>Harkat 2</title>
 </head>
-<script src="harkat.js"></script>
-
 <body>
-    <button id="NavOpenCloseButton" onclick="NavOpen()"><h3>Menu</h3></button>
-    <div id="NavMenu" class="NavMenu">
-        <ul>
-            <li><a href="harkat1.html">Harkat 1</a></li>
-            <li><a href="harkat2.html">Harkat 2</a></li>
-            <li><a href="harkat3.html">Harkat 3</a></li>
-            <li><a href="harkat4.html">Harkat 4</a></li>
-            <li><a href="harkat5.html">Harkat 5</a></li>
-          </ul>
+    <!-- Upper Flexbox-->
+    <div class="flexbox-up-down-container">
+        <div class="flex-up-down-item">
+            <p class="textCenterTitle">Ylä flexboxi. </p>
+        </div>
     </div>
-
-    <div id="mainDiv">
-        <!-- Tehtävä 21-->
-        <h2>Tehtävä 21 - Linkki</h2>
+    <!-- Left Flexbox-->
+    <div class="flexbox-left-right-container">
+        <div class="flex-left-right-item left-right-item-left">
+                <p class="textCenterBIG">Vasen Flexbox</p>
+                <hr class="hr">
+                <p class="textCenter">Navigointi:</p>
+                <ul>
+                    <li><a href="harkat1.html">Harkat 1</a></li>
+                    <li><a href="harkat2.html">Harkat 2</a></li>
+                    <li><a href="harkat3.html">Harkat 3</a></li>
+                    <li><a href="harkat4.html">Harkat 4</a></li>
+                    <li><a href="harkat4-responsiivinen-sivu.html">Harkat 4 - Responsiivinen Sivu</a></li>
+                    <li><a href="harkat5.html">Harkat 5</a></li>
+                  </ul>
+        </div>
+        <!-- Middle Flexbox-->
+        <div class="flex-middle-item left-right-item-middle">
+            <!-- Tehtävä 21-->
+        <h2 class="textCenterBIG">Tehtävä 21 - Linkki</h2>
         <a href="https://youtube.com">Linkki Youtubeen</a>
-        <hr>
+        <hr class="hr">
 
         <!-- Tehtävä 21.5-->
-        <h2>Tehtävä 21.5 - Windowsin lukitus tutoriaali</h2>
-        <p><mark>Merkitty</mark> &lt;- kohta</p>
-        <p>Lukittaaksesi Windowsin, paina <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> - Näppäimiä samaan aikaan</p>
-        <hr>
+        <h2 class="textCenterBIG">Tehtävä 21.5 - Windowsin lukitus tutoriaali</h2>
+        <p class="textCenter"><mark>Merkitty</mark> &lt;- kohta</p>
+        <p class="textCenter">Lukittaaksesi Windowsin, paina <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>Del</kbd> - Näppäimiä samaan aikaan</p>
+        <hr class="hr">
 
         <!-- Tehtävä 22-->
-        <h2>Tehtävä 22 - P-elementin sisäiset kappaleet</h2>
-        <p>Tässä esimerkki napista: <button>Nappi jota voi painaa</button> <br>Tässä taas esimerkki vaikkapa kirjoitus-input kohdasta: <input type="text"></p>
-        <hr>
+        <h2 class="textCenterBIG">Tehtävä 22 - P-elementin sisäiset kappaleet</h2>
+        <p class="textCenter">Tässä esimerkki napista: <button>Nappi jota voi painaa</button> <br>Tässä taas esimerkki vaikkapa kirjoitus-input kohdasta: <input type="text"></p>
+        <hr class="hr">
 
         <!-- Tehtävä 23-->
-        <h2>Tehtävä 23 - Formin label eli otsikko</h2>
+        <h2 class="textCenterBIG">Tehtävä 23 - Formin label eli otsikko</h2>
         <label>Tämä on label</label>
-        <p>Linkki: <a href="https://www.counter-strike.net/news">CSGO</a></p>
-        <hr>
+        <p class="textCenter">Linkki: <a href="https://www.counter-strike.net/news">CSGO</a></p>
+        <hr class="hr">
 
         <!-- Tehtävä 24-->
-        <h2>Tehtävä 24 - Pre</h2>
+        <h2 class="textCenterBIG">Tehtävä 24 - Pre</h2>
         <pre>Pre:
 <code>pre{
     font-size: large;
@@ -53,45 +62,45 @@
     display: flex;
 }</code>
 </pre>
-        <hr>
+        <hr class="hr">
 
         <!-- Tehtävä 25-->
-        <h2>Tehtävä 25 - Viiva </h2>
-        <hr>
+        <h2 class="textCenterBIG">Tehtävä 25 - Viiva </h2>
+        <hr class="hr">
 
         <!-- Tehtävä 26-->
-        <h2>Tehtävä 26 - Pre elementti 2</h2>
+        <h2 class="textCenterBIG">Tehtävä 26 - Pre elementti 2</h2>
         <pre>
 <code>---kauppa--
 Varaa: 5€
 Ostoksiesi hinta: 899€
 Myyjä: Vihainen</code></pre>
-        <hr>
+        <hr class="hr">
 
         <!-- Tehtävä 27-->
-        <h2>Tehtävä 27 - blockquote eli lainaus</h2>
-        <p>Blockquote: <blockquote>En tullut, en nähnyt enkä voittanut</blockquote></p>
-        <p>Quote on tässä: <q>quote</q></p>
-        <hr>
+        <h2 class="textCenterBIG">Tehtävä 27 - blockquote eli lainaus</h2>
+        <p class="textCenter">Blockquote: <blockquote>En tullut, en nähnyt enkä voittanut</blockquote></p>
+        <p class="textCenter">Quote on tässä: <q>quote</q></p>
+        <hr class="hr">
 
         <!-- Tehtävä 28-->
-        <h2>Tehtävä 28 - Numeroitu lista</h2>
-        <p>
+        <h2 class="textCenterBIG">Tehtävä 28 - Numeroitu lista</h2>
+        <p class="textCenter">
             <ol>
                 <li>
                     Numeroitu teksti tulee tänne
                 </li> Ei numeroitu tänne
             </ol>Ja teksti jota et halua listaan tänne
         </p>
-        <hr>
+        <hr class="hr">
 
         <!-- Tehtävä 29-->
-        <h2>Tehtävä 29 - luettelomerkki lista</h2>
-        <p><ul><li>Lista objekti 1<li>Lista objekti 2<li>Lista objekti 3</ul></p>
-        <hr>
+        <h2 class="textCenterBIG">Tehtävä 29 - luettelomerkki lista</h2>
+        <p class="textCenter"><ul><li>Lista objekti 1<li>Lista objekti 2<li>Lista objekti 3</ul></p>
+        <hr class="hr">
 
         <!-- Tehtävä 30-->
-        <h2>Tehtävä 30 - Navigointi</h2>
+        <h2 class="textCenterBIG">Tehtävä 30 - Navigointi</h2>
         <nav>
             <ul>
                 <li><a href="harkat1.html">Harjoitukset 1 - tiedosto</a>
@@ -101,37 +110,37 @@ Myyjä: Vihainen</code></pre>
                 <li><a href="harkat5.html">Harjoitukset 5 - tiedosto</a></li>
             </ul>
         </nav>
-        <hr>
-        <h2>Tehtävä 30 - Kuvauslista</h2>
+        <hr class="hr">
+        <h2 class="textCenterBIG">Tehtävä 30 - Kuvauslista</h2>
         <dt>Kuvauslista:
             <dt><img src="images/monkey.jfif" alt="manki"></dt>
             <br>Manki otti selfien
             <dd>Sisennys teksti tehty <code>&lt;dd&gt; - tagilla</code></dd>
         </dl>
-        <hr>
+        <hr class="hr">
 
         <!-- Tehtävä 31-->
-        <h2>Tehtävä 31 - Figure ja Ficaption</h2>
+        <h2 class="textCenterBIG">Tehtävä 31 - Figure ja Ficaption</h2>
         <figure>
             <img src="images/puu.png" alt="puu">
             <figcaption>Steve ja puu</figcaption>
             <img src="images/puu.png" alt="puu2">
             <figcaption>Steve ja puu 2</figcaption>
         </figure>
-        <hr>
+        <hr class="hr">
 
         <!-- Tehtävä 32-->
-        <h2>Tehtävä 32 - Taulukko</h2>
+        <h2 class="textCenterBIG">Tehtävä 32 - Taulukko</h2>
         <table border="1">
             <tr><td colspan=3> Eka solu
             <tr><td colspan=2> Toinen solu
             <tr><td colspan=1> Kolmas solu
             </tr>
         </table>
-        <hr>
+        <hr class="hr">
 
         <!-- Lisätehtävä-->
-        <h2>----- Lisätehtävä -----</h2>
+        <h2 class="textCenterBIG">----- Lisätehtävä -----</h2>
         <form>
             <h3>Henkilötietolomake:</h3>
             <label>Etunimesi: </label>
@@ -145,14 +154,28 @@ Myyjä: Vihainen</code></pre>
             <br>
             <button id="send">Lähetä</button>
         </form>
+        </div>
+        <!-- Right Flexbox-->
+        <div class="flex-left-right-item left-right-item-right">
+                <p class="textCenterBIG">Oikea Flexbox</p>
+                <hr class="hr">
+                <p class="textCenter">Navigointi:</p>
+                <ul>
+                    <li><a href="harkat1.html">Harkat 1</a></li>
+                    <li><a href="harkat2.html">Harkat 2</a></li>
+                    <li><a href="harkat3.html">Harkat 3</a></li>
+                    <li><a href="harkat4.html">Harkat 4</a></li>
+                    <li><a href="harkat4-responsiivinen-sivu.html">Harkat 4 - Responsiivinen Sivu</a></li>
+                    <li><a href="harkat5.html">Harkat 5</a></li>
+                  </ul>
+            
+        </div>
+    <!-- Down Flexbox-->
     </div>
-        
-
-    </body>
-    <style>
-        
-    </style>
-    <script>
-        
-    </script>
+    <div class="flexbox-up-down-container">
+        <div class="flex-up-down-item">
+            <p class="textCenter">Ala Flexboxi.</p>
+        </div>
+    </div>
+</body>
 </html>

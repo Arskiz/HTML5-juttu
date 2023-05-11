@@ -7,147 +7,176 @@
     <link rel="stylesheet" href="harkat.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC" rel="stylesheet">
-    <script src="files/harkat.js"></script>
-
-
     <title>Harkat 4</title>
 </head>
-<body class="hsla">
-    <button id="NavOpenCloseButton" onclick="NavOpen()"><h3>Menu</h3></button>
-    
-    <div id="NavMenu" class="NavMenu">
-        <ul>
-            <li><a href="harkat1.html">Harkat 1</a></li>
-            <li><a href="harkat2.html">Harkat 2</a></li>
-            <li><a href="harkat3.html">Harkat 3</a></li>
-            <li><a href="harkat4.html">Harkat 4</a></li>
-            <li><a href="harkat5.html">Harkat 5</a></li>
-          </ul>
+<body>
+    <!-- Upper Flexbox-->
+    <div class="flexbox-up-down-container">
+        <div class="flex-up-down-item">
+            <p class="textCenterTitle">Ylä flexboxi. </p>
+        </div>
     </div>
-
-
-    <div class="mainDiv">
-            <!-- Tehtävä 1 --> 
-        <span id="demo"><span id="demotext">Hei maailma!</span></span>
-        <hr>
-        <!-- Tehtävä 2 --> 
-        <p class="pysty">Aron</p>
-        <hr>
-        <!-- Tehtävä 3 -->
-        <p class="kasvu" ondblclick="this.style.textShadow = '0.1em 0.1em 0.5em #9f9'; this.style.fontSize = '64pt' ">Tarvitsemme Kasvua!</p>
-        <hr>
-        <!-- Tehtävä 4 -->
-        <p class="liikkuu" onclick="this.style.marginLeft='1000px'">Teksti liikkuu oikealla hiiren napsautuksella</p>
-        <hr>
-        <!-- Tehtävä 5 -->
-        <h1 class="rotate">Käännetty teksti</h1>
-        <h3 class="scaleY"> Y-skaalattu teksti</h3>
-        <p class="skewX"> X-vinotettu teksti</p>
-        <h4 class="skewY"> Y-vinotettu teksti</h4>
-        <hr>
-        <!-- Tehtävä 6 -->
-        <p>Tehtävä 6 = ?</p>
-        <hr>
-        <!-- Tehtävä 7 -->
-        <h1 class="t7" id="t6h1"> Tehtävä 7 teksti</h1>
-        <button onclick="demoa()">Animoi</button>
-        <hr>
-
-        <!-- Tehtävä 8 -->
-        <p class="varjostus">Varjostus P:lle 1</p>
-        <p class="varjostus2">Varjostus P:lle 2</p>
-        <h1 class="varjostus">Varjostus h1:lle</h1>
-        <hr>
-
-        <!-- Tehtävä 9 -->
-        <p id="nayte">Moi. Tässä on tekstiä jota kirjoitan 2 riviä. Taustavärin pitäisi olla sininen ja muuttua punaiseksi.</p>
-        <hr>
-
-        <!-- Tehtävä 10 -->
-        <h1 class="hsla"> HSLA-teksti</h1>
-        <hr>
-
-        <!-- Tehtävä 11 -->
-        <div class="light">Hyvä, jos näet tämän.</div>
-        <div class="medium">Tämä on helpompi nähdä.</div>
-        <div class="heavy">Tämän näkee todella hevisti.</div>
-        <hr>
-
-
-        <!-- Tehtävä 12 -->
-        <div class="eka">
-            <p>10% läpinäkyvä</p>
+    <!-- Left Flexbox-->
+    <div class="flexbox-left-right-container">
+        <div class="flex-left-right-item left-right-item-left">
+            <p class="textCenterBIG">Vasen Flexbox</p>
+            <hr class="hr">
+            <p class="textCenter">Navigointi:</p>
+            <ul>
+                <li><a href="harkat1.html">Harkat 1</a></li>
+                <li><a href="harkat2.html">Harkat 2</a></li>
+                <li><a href="harkat3.html">Harkat 3</a></li>
+                <li><a href="harkat4.html">Harkat 4</a></li>
+                <li><a href="harkat4-responsiivinen-sivu.html">Harkat 4 - Responsiivinen Sivu</a></li>
+                <li><a href="harkat5.html">Harkat 5</a></li>
+              </ul>
         </div>
-
-        <div class="toka">
-            <p>30% läpinäkyvä</p>
+        <!-- Middle Flexbox-->
+        <div class="flex-middle-item left-right-item-middle">
+       
+                <div class="mainDiv">
+                        <!-- Tehtävä 1 --> 
+                    <span id="demo"><span id="demotext">Hei maailma!</span></span>
+                    <hr class="hr">
+                    <!-- Tehtävä 2 --> 
+                    <p class="pysty textCenter">Aron</p>
+                    <hr class="hr">
+                    <!-- Tehtävä 3 -->
+                    <p class="kasvu textCenter" ondblclick="this.style.textShadow = '0.1em 0.1em 0.5em #9f9'; this.style.fontSize = '64pt' ">Tarvitsemme Kasvua!</p>
+                    <hr class="hr">
+                    <!-- Tehtävä 4 -->
+                    <p class="liikkuu textCenter" onclick="this.style.marginLeft='1000px'">Teksti liikkuu oikealla hiiren napsautuksella</p>
+                    <hr class="hr">
+                    <!-- Tehtävä 5 -->
+                    <h1 class="rotate textCenter">Käännetty teksti</h1>
+                    <h3 class="scaleY textCenter"> Y-skaalattu teksti</h3>
+                    <p class="skewX textCenter"> X-vinotettu teksti</p>
+                    <h4 class="skewY textCenter"> Y-vinotettu teksti</h4>
+                    <hr class="hr">
+                    <!-- Tehtävä 6 -->
+                    <p class="textCenter">Tehtävä 6 = ?</p>
+                    <hr class="hr">
+                    <!-- Tehtävä 7 -->
+                    <h1 class="t7 textCenter" id="t6h1"> Tehtävä 7 teksti</h1>
+                    <button onClick="demoa()">Animoi</button>
+                    <hr class="hr">
+            
+                    <!-- Tehtävä 8 -->
+                    <p class="varjostus textCenter">Varjostus P:lle 1</p>
+                    <p class="varjostus2 textCenter">Varjostus P:lle 2</p>
+                    <h1 class="varjostus textCenter">Varjostus h1:lle</h1>
+                    <hr class="hr">
+            
+                    <!-- Tehtävä 9 -->
+                    <p id="nayte textCenter">Moi. Tässä on tekstiä jota kirjoitan 2 riviä. Taustavärin pitäisi olla sininen ja muuttua punaiseksi.</p>
+                    <hr class="hr">
+            
+                    <!-- Tehtävä 10 -->
+                    <h1 class="hsla textCenter"> HSLA-teksti</h1>
+                    <hr class="hr">
+            
+                    <!-- Tehtävä 11 -->
+                    <div class="light">Hyvä, jos näet tämän.</div>
+                    <div class="medium">Tämä on helpompi nähdä.</div>
+                    <div class="heavy">Tämän näkee todella hevisti.</div>
+                    <hr class="hr">
+            
+            
+                    <!-- Tehtävä 12 -->
+                    <div class="eka">
+                        <p>10% läpinäkyvä</p>
+                    </div>
+            
+                    <div class="toka">
+                        <p>30% läpinäkyvä</p>
+                    </div>
+            
+                    <div class="kolmas">
+                        <p>60% läpinäkyvä</p>
+                    </div>
+            
+                    <div>
+                        <p>perus</p>
+                    </div>
+                    <hr class="hr">
+            
+                    <!-- Tehtävä 13 -->
+                    <div class="contain">
+                        <p>Containi</p>
+                    </div>
+            
+                    <div class="cover">
+                        <p>Coveri</p>
+                    </div>
+            
+                    <div class="fullSize">
+                        <p>100% widthi ja heighti</p>
+                    </div>
+                    <hr class="hr">
+            
+                    <!-- Tehtävä 14 -->
+                    <div class="demoDiv">
+                        <p class="textCenter">Kuva Spämmi!</p>
+                        <p class="textCenter">Kuva Spämmi!</p>
+                        <p class="textCenter">Kuva Spämmi!</p>
+                        <p class="textCenter">Kuva Spämmi!</p>
+                    </div>
+                    <hr class="hr">
+            
+                    <!-- Tehtävä 15 -->
+                    <div class="asettelu">
+                        <div class="ots">Otsakeosa</div>
+                        <div class="sis">Sisältöosa</div>
+                        <div class="oh">Oheissisältö</div>
+                        <div class="omasis">
+                            <article class="article">
+                                <p class="textCenter">------------------------------------------------------</p>
+                                <p class="textCenter">
+                                    Joustolaatikot, flex box
+                                </p>
+                                <p class="textCenter">
+                                    Joustolaatikko on tämä siis
+                                </p>
+                                <p class="textCenter">------------------------------------------------------</p>
+            
+                            </article>
+                        </div>
+                    </div>
+                    <!-- Tehtävä 16 -->
+                    <div class="grid">
+                        <div class="innerGrid">Grid 1</div>
+                        <div class="innerGrid">Grid 2</div>
+                        <div class="innerGrid">Grid 3</div>
+                        <div class="innerGrid">Grid 4</div>
+                        <div class="innerGrid">Grid 5</div>
+                      </div>
+            
+                    <!-- Tehtävä 17 -->
+                    <!-- KAIKKI HARKAT 1-4 ON RESPONSIIVISIA-->
+                </div>
+                
         </div>
-
-        <div class="kolmas">
-            <p>60% läpinäkyvä</p>
+        <!-- Right Flexbox-->
+        <div class="flex-left-right-item left-right-item-right">
+            <p class="textCenterBIG">Oikea Flexbox</p>
+            <hr class="hr">
+            <p class="textCenter">Navigointi:</p>
+            <ul>
+                <li><a href="harkat1.html">Harkat 1</a></li>
+                <li><a href="harkat2.html">Harkat 2</a></li>
+                <li><a href="harkat3.html">Harkat 3</a></li>
+                <li><a href="harkat4.html">Harkat 4</a></li>
+                <li><a href="harkat4-responsiivinen-sivu.html">Harkat 4 - Responsiivinen Sivu</a></li>
+                <li><a href="harkat5.html">Harkat 5</a></li>
+              </ul>
         </div>
-
-        <div>
-            <p>perus</p>
-        </div>
-        <hr>
-
-        <!-- Tehtävä 13 -->
-        <div class="contain">
-            <p>Containi</p>
-        </div>
-
-        <div class="cover">
-            <p>Coveri</p>
-        </div>
-
-        <div class="fullSize">
-            <p>100% widthi ja heighti</p>
-        </div>
-        <hr>
-
-        <!-- Tehtävä 14 -->
-        <div class="demoDiv">
-            <p>Kuva Spämmi!</p>
-            <p>Kuva Spämmi!</p>
-            <p>Kuva Spämmi!</p>
-            <p>Kuva Spämmi!</p>
-        </div>
-        <hr>
-
-        <!-- Tehtävä 15 -->
-        <div class="asettelu">
-            <div class="ots">Otsakeosa</div>
-            <div class="sis">Sisältöosa</div>
-            <div class="oh">Oheissisältö</div>
-            <div class="omasis">
-                <article>
-                    <p>------------------------------------------------------</p>
-                    <p>
-                        Joustolaatikot, flex box
-                    </p>
-                    <p>
-                        Joustolaatikko on tämä siis
-                    </p>
-                    <p>------------------------------------------------------</p>
-
-                </article>
-            </div>
-        </div>
-        <!-- Tehtävä 16 -->
-        <div class="grid">
-            <div>Grid 1</div>
-            <div>Grid 2</div>
-            <div>Grid 3</div>
-            <div>Grid 4</div>
-            <div>Grid 5</div>
-          </div>
-
-        <!-- Tehtävä 17 -->
-        <!-- KAIKKI HARKAT 1-4 ON RESPONSIIVISIA-->
+    <!-- Down Flexbox-->
     </div>
-    
-
-    
+    <div class="flexbox-up-down-container">
+        <div class="flex-up-down-item">
+            <p class="textCenterBIG">Ala Flexboxi</p>
+            <p class="textCenter">Blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah blah...</p>
+        </div>
+    </div>
 </body>
 </html>
